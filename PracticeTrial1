@@ -2,10 +2,8 @@ var shuffleSequence = seq( "intro", "practice", "sep", "setcounter", rshuffle(rs
 var practiceItemTypes = ["practice"];
 
 var defaults = [
-    "Separator", {
-        normalMessage: "Press the spacebar to continue.",
-        errorMessage: "Wrong answer. Please wait for the next sentence."
-    },
+    "Separator", {transfer: "keypress", normalMessage: "\u274C\u274C", ignoreFailure: true},
+    
     "DashedSentence", {
         mode: "self-paced reading",
         hideUnderscores: true,
@@ -55,8 +53,12 @@ var items = [
                    "Question", {randomOrder: false, hasCorrect: 1, q:"Mike was a cheap date.", as: [["F","True"], ["J","False"]]},
                    "Separator", {normalMessage: "Good job, correct!",errorMessage: "Incorrect!", ignoreFailure: false, transfer:1000}],
     
-    [["practice",003], "DashedSentence", {s: "This_is_the_final_round_of_practice_sentences.\nThere_will_not_always_be_a_question_which_follows.\nRemember_to_press_the_spacebar to_advance_from_one_item to_the_next."},
-                   "Question", {randomOrder: false, hasCorrect: 0, q:"If you are ready to begin, select True.", as: [["F","True"], ["J","False"]]},
+    [["practice",003], "DashedSentence", {s: "This_is_the_final_round_of_practice_sentences.\nThere_will_not_always_be_a_question_which_follows_the_sentences_that_you_encounter.\nRemember_to_press_the_spacebar once_you_have_finished_reading_to_advance from_one_item_to_the_next."},
+                   "Question", {randomOrder: false, hasCorrect: 0, q:"Select True or False to move on to the main exercise.", as: [["F","True"], ["J","False"]]},
+                   "Separator", {normalMessage: "Good job, correct!",errorMessage: "Incorrect!", ignoreFailure: false, transfer:1000}],
+    
+    [["IdiomF",1], "DashedSentence", {s: "This_is_the_final_round_of_practice_sentences.\nThere_will_not_always_be_a_question_which_follows_the_sentences_that_you_encounter.\nRemember_to_press_the_spacebar once_you_have_finished_reading_to_advance from_one_item_to_the_next."},
+                   "Question", {randomOrder: false, hasCorrect: 0, q:"Select True or False to move on to the main exercise.", as: [["F","True"], ["J","False"]]},
                    "Separator", {normalMessage: "Good job, correct!",errorMessage: "Incorrect!", ignoreFailure: false, transfer:1000}],
                   
      
