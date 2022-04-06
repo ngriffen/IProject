@@ -1,0 +1,64 @@
+var shuffleSequence = seq( "intro", "practice", "sep", "setcounter", rshuffle(rshuffle("IdiomF", "IdiomIF"),rshuffle("NSF","NSIF","Filler")));
+var practiceItemTypes = ["practice"];
+
+var defaults = [
+    "Separator", {
+        normalMessage: "Press the spacebar to continue.",
+        errorMessage: "Wrong answer. Please wait for the next sentence."
+    },
+    "DashedSentence", {
+        mode: "self-paced reading",
+        hideUnderscores: true,
+        showAhead: false,
+        showBehind: false
+    },
+    "AcceptabilityJudgment", {
+        as: ["1", "2", "3", "4", "5", "6", "7"],
+        presentAsScale: true,
+        instructions: "Click on the number that corresponds to your judgment.",
+        leftComment: "(Completely unacceptable)", rightComment: "(Completely acceptable)"
+    },
+    "Question",
+        {as: ["True", "False"],
+        presentAsScale: true,
+        hasCorrect: false,
+        randomOrder: false,
+        instructions: "Press F for 'True' or Press J for 'False'."},
+
+    "Message", {
+        hideProgressBar: true
+    },
+    "Form", {
+        hideProgressBar: true,
+        continueOnReturn: true,
+        saveReactionTime: true
+    }
+];
+
+var items = [
+
+    ["sep", "Separator", { }],
+
+    ["intro", "Form", {
+        html: { include: "example_intro.html" },
+        validators: {
+            age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
+        }
+    } ],
+
+  
+    [["practice",001], "DashedSentence", {s: "This_is_a_practice_sentence.\nThe_second_sentence_will_appear_below_the_first.\nIn_the_third_sentence there_may_be_a_statement which_you_will_need_to_determine_as_True_or_False."},
+                   "Question", {randomOrder: false, hasCorrect: 0, q:"This is merely practice, use the 'F' and 'J' keys on your keyboard to choose True or False.", as: [["F","True"], ["J","False"]]},
+                   "Separator", {normalMessage: "Good job, correct!",errorMessage: "Incorrect!", ignoreFailure: false, transfer:1000}],
+    
+    [["practice",002], "DashedSentence", {s: "Bosco_was_a_cheap_date.\nHe_usually_ordered_little_to_nothing_at_whichever_restaurant_he_was_invited_to.\nDuring_those_times, Bosco_grew_quite_hungry though_he_would_not_admit_it."},
+                   "Question", {randomOrder: false, hasCorrect: 1, q:"Mike was a cheap date.", as: [["F","True"], ["J","False"]]},
+                   "Separator", {normalMessage: "Good job, correct!",errorMessage: "Incorrect!", ignoreFailure: false, transfer:1000}],
+    
+    [["practice",003], "DashedSentence", {s: "This_is_the_final_round_of_practice_sentences.\nThere_will_not_always_be_a_question_which_follows.\nRemember_to_press_the_spacebar to_advance_from_one_item to_the_next."},
+                   "Question", {randomOrder: false, hasCorrect: 0, q:"If you are ready to begin, select True.", as: [["F","True"], ["J","False"]]},
+                   "Separator", {normalMessage: "Good job, correct!",errorMessage: "Incorrect!", ignoreFailure: false, transfer:1000}],
+                  
+     
+    
+    ];
