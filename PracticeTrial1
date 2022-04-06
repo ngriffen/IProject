@@ -2,7 +2,7 @@ var shuffleSequence = seq( "intro", "practice", "sep", "setcounter", rshuffle(rs
 var practiceItemTypes = ["practice"];
 
 var defaults = [
-    "Separator", {transfer: "keypress", normalMessage: "\u274C\u274C", ignoreFailure: true},
+    "Separator", {transfer: "keypress", normalMessage: "\u274C Press the spacebar to advance to the exercise. \u274C", ignoreFailure: true},
     
     "DashedSentence", {
         mode: "self-paced reading",
