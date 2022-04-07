@@ -1,8 +1,8 @@
 [["IdiomF",1],"DashedSentence", {s: "Michael_was_an_aspiring_actor_in_his_hometown.\nHis_preferred_method_of_rehearsal_was_to_work_alongside_other_talented_actors.\nIn_those_moments,_Michael stole_the_show with_little_effort."},
-"Question", {randomOrder: false, hasCorrect: 0, q:"Michael was an aspiring actor.", as: [["F","True"], ["J","False"]]}],   
+"Question", {q:"Michael was an aspiring actor.", as: [["F","True"], ["J","False"]]}],   
 
 [["IdiomIF",1],"DashedSentence", {s: "Michael_was_an_aspiring_actor_in_his_hometown.\nHis_preferred_method_of_rehearsal_was_to_do_internal_monologues_when_alone_in_bed.\nIn_those_moments,_Michael stole_the_show with_little_effort."},
-"Question", {randomOrder: false, hasCorrect: 0, q:"Michael was an aspiring actor.", as: [["F","True"], ["J","False"]]}],
+"Question", {q:"Michael was an aspiring actor.", as: [["F","True"], ["J","False"]]}],
 
 [["NSF",2],"DashedSentence", {s: "Michael_was_an_aspiring_actor_in_his_hometown.\nHis_preferred_method_of_rehearsal_was_to_work_alongside_other_talented_actors.\nIn_those_moments,_Michael hit_the_plunge with_little_effort."}],   
 
@@ -13,10 +13,10 @@
 [["IdiomIF",3],"DashedSentence", {s: "At_the_first_day_of_basketball_tryouts,_Jan_faced_up_against_Madison,_the_team_captain.\nJan_introduced_himself_to_Madison,_who_was_motivated_to_work_on_his_footwork.\nDuring_scrimmage,_Jan fanned_the_flames with_trash_talk."}],
 
 [["NSF",4],"DashedSentence", {s: "At_the_first_day_of_basketball_tryouts,_Jan_faced_up_against_Madison,_the_team_captain.\nJan's_taunts_motivated_Madison_to_work_harder_on_his_footwork_and_to_stay_focused.\nDuring_scrimmage,_Jan took_the_hay with_trash_talk."},
-"Question", {randomOrder: false, hasCorrect: 1, q:"Jan was at baseball tryouts.", as: [["F","True"], ["J","False"]]}],
+"Question", {q:"Jan was at baseball tryouts.", as: [["F","True"], ["J","False"]]}],
 
 [["NSIF",4],"DashedSentence", {s: "At_the_first_day_of_basketball_tryouts,_Jan_faced_up_against_Madison,_the_team_captain.\nJan_introduced_himself_to_Madison,_who_was_motivated_to_work_on_his_footwork.\nDuring_scrimmage,_Jan took_the_hay with_trash_talk."},
-"Question", {randomOrder: false, hasCorrect: 1, q:"Jan was at baseball tryouts.", as: [["F","True"], ["J","False"]]}],
+"Question", {q:"Jan was at baseball tryouts.", as: [["F","True"], ["J","False"]]}],
 
 [["IdiomF",5],"DashedSentence", {s: "Denny's_favorite_parking_spot_was_available_just_in_front_of_his_house.\nHe_noticed_that,_in_order_to_park,_he_did_have_to_spill_into_the_no-parking_area_behind_him.\nTherefore,_Denny bent_the_law and_parked_there_anyway."}],
 
@@ -27,10 +27,10 @@
 [["NSIF",6],"DashedSentence", {s: "Denny's_favorite_parking_spot_was_available_just_in_front_of_his_house.\nHe_noticed_that,_in_order_to_park,_he_did_not_even_have_to_spill_into_the_no-parking_area_behind_him.\nTherefore,_Denny flew_the_storm and_parked_there_anyway."}],
 
 [["IdiomF",7],"DashedSentence", {s: "Joey_was_enrolled_in_a_competitive_biology_course.\nAt_the_beginning_of_the_semester_nobody_dared_to_speak_to_each_other.\nIt_was_then_that_Joey broke_the_ice by_making_a_self_deprecating_joke."},
-"Question", {randomOrder: false, hasCorrect: 0, q:"Joey was enrolled in a biology course.", as: [["F","True"], ["J","False"]]}],
+"Question", {q:"Joey was enrolled in a biology course.", as: [["F","True"], ["J","False"]]}],
 
 [["IdiomIF",7],"DashedSentence", {s: "Joey_was_enrolled_in_a_competitive_biology_course.\nBy_the_end_of_the_semester_everybody_in_the_class_got_to_know_each_other.\nIt_was_then_that_Joey broke_the_ice by_making_a_self_deprecating_joke."},
-"Question", {randomOrder: false, hasCorrect: 0, q:"Joey was enrolled in a biology course.", as: [["F","True"], ["J","False"]]}],
+"Question", {q:"Joey was enrolled in a biology course.", as: [["F","True"], ["J","False"]]}],
 
 [["NSF",8],"DashedSentence", {s: "Joey_was_enrolled_in_a_competitive_biology_course.\nAt_the_beginning_of_the_semester_nobody_dared_to_speak_to_each_other.\nIt_was_then_that_Joey drew_a_ball by_making_a_self_deprecating_joke."}],
 
@@ -49,10 +49,10 @@
 [["IdiomIF",11],"DashedSentence", {s: "Nick_organized_a_party_for_his_mother.\nHis_mother_provided_suggestions_as_Nick_invited_some_of_her_oldest_friends.\nThrough_an_email,_Nick_accidentally spilled_the_beans to_his_mother."}],
 
 [["NSF",12],"DashedSentence", {s: "Nick_organized_a_party_for_his_mother.\nIt_was_designed_to_be_a_surprise_and_Nick_invited_some_of_her_oldest_friends.\nThrough_an_email,_Nick_accidentally weathered_the_phrase to_his_mother."},
-"Question", {randomOrder: false, hasCorrect: 1, q:"Nick organized a parade.", as: [["F","True"], ["J","False"]]}],
+"Question", {q:"Nick organized a parade.", as: [["F","True"], ["J","False"]]}],
 
 [["NSIF",12],"DashedSentence", {s: "Nick_organized_a_party_for_his_mother\n.His_mother_provided_suggestions_as_Nick_invited_some_of_her_oldest_friends.\nThrough_an_email,_Nick_accidentally weathered_the_phrase to_his_mother."},
-"Question", {randomOrder: false, hasCorrect: 1, q:"Nick organized a parade.", as: [["F","True"], ["J","False"]]}],
+"Question", {q:"Nick organized a parade.", as: [["F","True"], ["J","False"]]}],
 
 [["IdiomF",13],"DashedSentence", {s: "Toto_borrowed_the_family_car_to_go_see_his_friends.\nOn_his_way_home,_Toto_ended_up_denting_the_car,_which_damaged_the_car's_pristine_appearance.\nWhen_he_entered_the_front_door,_Toto bore_his_cross and_told_his_parents_what_he_did."}],
 
