@@ -1,8 +1,8 @@
-var shuffleSequence = seq( "intro", "practice", "sep", "setcounter", rshuffle(rshuffle("IdiomF", "IdiomIF"),rshuffle("NSF","NSIF","Filler")));
+var shuffleSequence = seq( "intro", "practice", "sep", "welcome", "setcounter", rshuffle(rshuffle("IdiomF", "IdiomIF"),rshuffle("NSF","NSIF","Filler")));
 var practiceItemTypes = ["practice"];
 
 var defaults = [
-    "Separator", {transfer: "keypress", normalMessage: "\u274C Press the spacebar to advance to the exercise. \u274C", ignoreFailure: true},
+    "Separator", {transfer: "keypress", normalMessage: "\u274CThis is the end of the practice session.\u274C", ignoreFailure: true},
     
     "DashedSentence", {
         mode: "self-paced reading",
@@ -35,6 +35,7 @@ var defaults = [
 
 var items = [
 
+    ["welcome", "Message", {html: 'The next screen will be blank until you press the spacebar. Continue to press the spacebar to progress through the exercise.'}],
     ["sep", "Separator", { }],
 
     ["intro", "Form", {
