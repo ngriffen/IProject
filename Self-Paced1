@@ -144,11 +144,11 @@ var items = [
 
 [["NSF",10],"DashedSentence", {s: "Angela_bought_herself_a_new_designer_jacket.\nShe_quickly_planned_her_next_big_trip_to_the_city_where_she_would_wear_it_in_front_of_her_stylish_aunt.\nThere,_Angela_could blew_her_path while_having_fun."}],
 
-[["IdiomF",11],"DashedSentence", {s: "Gabby_was_going_to_meet_Zane_at_the_nearby_park_for_a_picnic.\nGabby_had_been_feeling_depressed_lately_and_the_dark_cloudy_skies_made_her_feel_even_worse.\nThe_sun's_emergence lifted_her_spirits as_she_unrolled_a_blanket."}],
+[["IdiomF",11],"DashedSentence", {s: "Zane_was_going_to_meet_Gabby_at_the_nearby_park_for_a_picnic.\nGabby_had_been_feeling_depressed_lately_and_the_dark_cloudy_skies_made_her_feel_even_worse.\nThe_sun's_emergence lifted_her_spirits as_she_unrolled_a_blanket."}],
 
-[["IdiomIF",11],"DashedSentence", {s: "Gabby_was_going_to_meet_Zane_at_the_nearby_park_for_a_picnic.\nGabby_had_been_feeling_wonderful_lately_and_the_puffy_clouds_made_her_feel_even_better.\nThe_sun's_emergence lifted_her_spirits as_she_unrolled_a_blanket."}],
+[["IdiomIF",11],"DashedSentence", {s: "Zane_was_going_to_meet_Gabby_at_the_nearby_park_for_a_picnic.\nGabby_had_been_feeling_wonderful_lately_and_the_puffy_clouds_made_her_feel_even_better.\nThe_sun's_emergence lifted_her_spirits as_she_unrolled_a_blanket."}],
 
-[["NSF",11],"DashedSentence", {s: "Gabby_was_going_to_meet_Zane_at_the_nearby_park_for_a_picnic.\nGabby_had_been_feeling_depressed_lately_and_the_dark_cloudy_skies_made_her_feel_even_worse.\nThe_sun's_emergence used_her_peace as_she_unrolled_a_blanket."}],
+[["NSF",11],"DashedSentence", {s: "Zane_was_going_to_meet_Gabby_at_the_nearby_park_for_a_picnic.\nGabby_had_been_feeling_depressed_lately_and_the_dark_cloudy_skies_made_her_feel_even_worse.\nThe_sun's_emergence used_her_peace as_she_unrolled_a_blanket."}],
 
 [["IdiomF",12],"DashedSentence", {s: "Becky_came_home_one_evening_with_a_special_dessert_--_vanilla_ice_cream.\nShe_was_now_angry_with_herself_for_having_bought_her_husband's_least_favorite_brand.\nBecky's_surprise drove_him_nuts and_he_went_back_to_watching_a_movie."}],
 
@@ -180,20 +180,24 @@ var items = [
 
 [["NSF",16],"DashedSentence", {s: "Tara_decided_to_sign_up_for_a_tennis_tournament.\nShe_struggled_in_the_first_round_and_ended_up_humiliated,_losing_in_straight_sets.\nAs_she_left_the_court,_she followed_her_bridges and_vowed_to_work_on_her_serve."}],
 
-[["IdiomF",17],"DashedSentence",{s:"Penelope_was_learning_how_to_play_the_piano.\nShe_stopped_having_lessons_when_her_parents_sold_their_piano_to_buy_a_violin_for_their_other_daughter,_Sadie.\nIt_was_clear_that_they clipped_her_wings out_of_favoritism."}],
+[["IdiomF",17],"DashedSentence", {s: "For_3_years,_Ilse_has_been_working_on_her_PhD.\nIt_has_meant_much_solitude_and_she's_learned_that_there_are_few_teaching_jobs_once_it_is_done.\nOne_morning,_she_decided_to pull_the_plug on_this_endeavor."},
+"Question", {q:"Ilse was working on her PhD.", as: [["F","False"], ["J","True"]]}],
 
-[["IdiomIF",17],"DashedSentence",{s:"Penelope_was_learning_how_to_play_the_piano.\nShe_stopped_having_lessons_when_her_parents_sold_their_piano_to_buy_a_respirator_for_their_other_daughter,_Sadie.\nIt_was_clear_that_they clipped_her_wings out_of_favoritism."}],
+[["IdiomIF",17],"DashedSentence", {s: "For_3_years,_Ilse_has_been_working_on_her_PhD.\nIt_has_been_a_rewarding_experience_and_she_learned_that_she_could_get_a_teaching_job_once_it_is_done.\nOne_morning,_she_decided_to pull_the_plug on_this_endeavor."},
+"Question", {q:"Ilse was working on her PhD.", as: [["F","False"], ["J","True"]]}],
 
-[["IdiomIF",17],"DashedSentence",{s:"Penelope_was_learning_how_to_play_the_piano.\nShe_stopped_having_lessons_when_her_parents_sold_their_piano_to_buy_a_violin_for_their_other_daughter,_Sadie.\nIt_was_clear_that_they curled_the_mustard out_of_favoritism."}],
+[["NSF",17],"DashedSentence", {s: "For_3_years,_Ilse_has_been_working_on_her_PhD.\nIt_has_meant_much_solitude_and_she's_learned_that_there_are_few_teaching_jobs_once_it_is_done.\nOne_morning,_she_decided_to curl_the_mustard on_this_endeavor."},
+"Question", {q:"Ilse was working on her PhD.", as: [["F","False"], ["J","True"]]}],
 
-[["IdiomF",18],"DashedSentence",{s:"Liz_was_a_famous_chef_and_made_astonishing_food_at_her_own_restaurant.\nIt_was_her_last_night_before_her_retirement,_so_her_underlings_planned_a_surprise_for_her.\nThey sang_her_praises with_a_golden_cake_and_the_entire_restaurant_applauded_her."},
-"Question", {q:"Liz was a chef.", as: [["F","False"], ["J","True"]]}],
+[["IdiomF",18],"DashedSentence", {s: "Don_was_preparing_to_meet_up_with_his_brother-in-law_Rob.\nThey_haven't_spoken_much_since_they_got_into_a_major_fight_over_the_last_election.\nThey_both_agreed_to bury_the_hatchet after_a_recent_family_event."},
+"Question", {q:"Don was preparing to walk his dog.", as: [["F","False"], ["J","True"]]}],
 
-[["IdiomIF",18],"DashedSentence",{s:"Liz_was_a_lesser_known_chef_and_made_bad_tasting_food_at_a_restaurant_owned_by_her_landlord.\nIt_was_her_last_night_before_her_retirement,_so_her_underlings_planned_a_surprise_for_her.\nThey sang_her_praises with_a_golden_cake_and_the_entire_restaurant_applauded_her."},
-"Question", {q:"Liz was a chef.", as: [["F","False"], ["J","True"]]}],
+[["IdiomIF",18],"DashedSentence", {s: "Don_was_preparing_to_meet_up_with_his_brother-in-law_Rob.\nThey_haven't_been_out_much_since_they_went_to_see_a_major_boxing_match_together.\nThey_both_agreed_to bury_the_hatchet after_a_recent_family_event."},
+"Question", {q:"Don was preparing to walk his dog.", as: [["F","False"], ["J","True"]]}],
 
-[["NSF",18],"DashedSentence",{s:"Liz_was_a_lesser_known_chef_and_made_bad_tasting_food_at_a_restaurant_owned_by_her_landlord.\nIt_was_her_last_night_before_her_retirement,_so_her_underlings_planned_a_surprise_for_her.\nThey battled_the_coop with_a_golden_cake_and_the_entire_restaurant_applauded_her."},
-"Question", {q:"Liz was a chef.", as: [["F","False"], ["J","True"]]}],
+[["NSF",18],"DashedSentence", {s: "Don_was_preparing_to_meet_up_with_his_brother-in-law_Rob.\nThey_haven't_spoken_much_since_they_got_into_a_major_fight_over_the_last_election.\nThey_both_agreed_to battle_the_coop after_a_recent_family_event."},
+"Question", {q:"Don was preparing to walk his dog.", as: [["F","False"], ["J","True"]]}],
+
 
 [["FactC",19],"DashedSentence", {s: "Bruce_taught_a_class_on_quantum_physics.\nWith_his_new_approach_to_teaching,_he_noticed_that_his_students_had_mastered_the_material.\nAlmost_all_of_his_students bumped_their_grades up_by_a_level."}],
 
