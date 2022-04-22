@@ -1,8 +1,8 @@
 var defaults = [
     "Separator", {
-        transfer: 3000,
-        normalMessage: "(Press the spacebar to continue once the screen is blank.)",
-        errorMessage: "(Error)."
+        transfer: 2000,
+        normalMessage: "(Press the spacebar to continue)",
+        errorMessage: "(Error)"
     },
     
     "DashedSentence", {
@@ -37,10 +37,12 @@ var defaults = [
 PennController.ResetPrefix(null);
 
 Sequence("Instructions",
+        "Statement",
         "Instructions2",
         "Instructions3",
-        "practice",
+        sepWith("sep", seq("practice")),
         "TrainEnd",
+        "StartEx",
         sepWith("sep", shuffle(rshuffle("IdiomF","IdiomIF","NSF"),rshuffle("FactC","FactIC"))),
         "Outro",
         SendResults(),
@@ -62,9 +64,9 @@ newTrial("Instructions",
     newText("<p>Hello! Welcome to the experiment!</p>")
         .bold()
     ,
-    newText("<pIn this experiment, the instructions are quite simple.</p>")
+    newText("<p>In this experiment, the instructions are quite simple.</p>")
     ,
-    newText("Your task will be to read short stories and to reply to True or False statements.")
+    newText("Your task will be to read short stories and to answer comprehension statements.")
     ,
     newText("<p><b>Are you ready to get started?</b></p>")
     ,
@@ -94,6 +96,26 @@ newTrial("Instructions",
     // Store the text from inputID into the Var element
     getVar("inputID").set( getTextInput("inputID") )
 )
+    
+    newTrial( "Statement",
+    defaultText.center().print()
+     ,
+     newText("<p> Before you begin, you must read the information sheet and the consent form.</p>")
+        .bold()
+     ,
+     newText("<p>You can only proceed with the experiment after you have given your consent.</p>")
+        .bold()
+     ,
+     newText("<a href='https://e1.pcloud.link/publink/show?code=XZTsuzZeLMlidxgrbQL759LnqHIsFSUa8vk' target=_'blank' >"+
+          "Click here to review the information sheet and the consent form.</a>")
+         .css("margin","1em")  
+         .print()
+     ,
+     newButton("consent button2", "I consent.")
+        .center()
+        .print()
+        .wait()
+)
 
 // Instructions
 newTrial("Instructions2",
@@ -115,7 +137,7 @@ newTrial("Instructions2",
     ,
     newText("Following the final sentence of each story, there may be a comprehension statement.")
     ,
-    newText("<p>Your instruction is to determine whether this statement is <b>True</b> or <b>False</b>. </p>")
+    newText("<p>Your instruction is to determine whether this statement is <b>False</b> or <b>True</b>. </p>")
     ,
     newText("<p> </p>")
     ,
@@ -164,6 +186,8 @@ newTrial("Instructions3",
         .wait()
         // .log()
 )
+
+
     
 newTrial( "Outro",
     defaultText.center().print()
@@ -230,9 +254,24 @@ newTrial( "Outro",
      // Automatically print all Text elements, centered
     defaultText.center().print()
     ,
-    newText("<p>Great Job! This is the end of the practice session.</p>")
+    newText("<p>Great Job! You have completed the practice session.</p>")
     ,
-    newText("\u274C <b>Press the space bar to begin the experiment.</b> \u274C")
+    newText("\u274C <b>Press the spacebar to continue.</b> \u274C")
+    ,
+    newKey(" ")
+        // .log()
+        .wait()
+        // .log()
+)
+    
+
+ newTrial("StartEx",
+     // Automatically print all Text elements, centered
+    defaultText.center().print()
+    ,
+    newText("<p>Now that you are more comfortable with the controls, you may begin the experiment. </p>")
+    ,
+    newText("\u274C <b>Press the spacebar when you are ready to begin.</b> \u274C")
     ,
     newKey(" ")
         // .log()
@@ -241,7 +280,7 @@ newTrial( "Outro",
 )
     
 var items = [
-
+    
     ["welcome", "Message", {html: 'The next screen will be blank until you press the spacebar. Continue to press the spacebar to progress through the exercise.'}],
     ["sep", "Separator", { }],
 
