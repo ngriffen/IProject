@@ -43,6 +43,7 @@ Sequence("Instructions",
         sepWith("sep", seq("practice")),
         "TrainEnd",
         "StartEx",
+        sepWith("sep", shuffle(rshuffle("Banal"))),
         sepWith("sep", shuffle(rshuffle("IdiomF","IdiomIF","NSF"),rshuffle("FactC","FactIC"))),
         "Outro",
         SendResults(),
@@ -214,8 +215,8 @@ newTrial( "Outro",
     ,
     newText("<b>Level of education</b>")
     ,
-    newDropDown("edu" , "select")
-    .add( "High School" , "Some College" , "College Graduate" )
+    newDropDown("education" , "select")
+    .add( "High School" , "Some University" , "University Graduate" )
     .center()
     .css("margin","1em")
     .print()
@@ -313,6 +314,10 @@ var items = [
 [["practice",116], "DashedSentence", {s: "Nelson_was_involved_in_a_minor_car_crash.\nLuckily,_he_knew_that_his_insurance_would_cover_the_damage_done_to_his_car.\nHe_felt_fortunate_that_the_crash_did_not_cause_him_to break_a_bone or_result_in_any_severe_trauma."},
                    "Question", {randomOrder: false, hasCorrect: 0, q:"Nelson involved in a major car crash.", as: [["F","False"], ["J","True"]]},
                    "Separator", {normalMessage: "Good job, correct!",errorMessage: "Incorrect!", ignoreFailure: false, transfer:1000}],
+                
+[["Banal",222],"DashedSentence", {s: "Julia_did_not_want_to_go_to_the_cinema.\nShe_preferred_spending_her_evenings_by_herself_rather_than_being_out_in_public.\nShe_would_rather knit_a_sweater while_sitting_on_her_couch_in_the_living_room."}],
+
+[["Banal",223],"DashedSentence", {s: "Peter_wanted_to_plant_vegetables_in_the_garden.\nHe_decided_that_it_would_be_ideal_to_start_out_with_carrots_and_celery.\nHe_knew_that_it_might take_a_while to_learn_how_to_cultivate_them."}],                
 
 [["IdiomF",1],"DashedSentence", {s: "Michael_was_an_aspiring_actor_in_his_hometown.\nHis_preferred_method_of_rehearsal_was_to_work_alongside_other_talented_actors.\nIn_those_moments,_Michael stole_the_show with_little_effort."},
 "Question", {q:"Michael was an aspiring actor.", as: [["F","False"], ["J","True"]]}],   
@@ -359,7 +364,7 @@ var items = [
 [["IdiomIF",6],"DashedSentence", {s: "Nick_organized_a_party_for_his_mother.\nHis_mother_provided_suggestions_as_Nick_invited_some_of_her_oldest_friends.\nThrough_an_email,_Nick_accidentally spilled_the_beans to_his_mother."},
 "Question", {q:"Nick organized a party for his aunt.", as: [["F","False"], ["J","True"]]}],
 
-[["NSF",6],"DashedSentence", {s: "Nick_organized_a_party_for_his_mother.\nIt_was_designed_to_be_a_surprise_and_Nick_invited_some_of_her_oldest_friends.\nThrough_an_email,_Nick_accidentally weathered_the_phrase to_his_mother."},
+[["NSF",6],"DashedSentence", {s: "Nick_organized_a_party_for_his_mother.\nIt_was_designed_to_be_a_surprise_and_Nick_invited_some_of_her_oldest_friends.\nThrough_an_email,_Nick_accidentally cramped_the_air to_his_mother."},
 "Question", {q:"Nick organized a party for his aunt.", as: [["F","False"], ["J","True"]]}],
 
 [["IdiomF",7],"DashedSentence", {s: "Toto_borrowed_the_family_car_to_go_see_his_friends.\nOn_his_way_home,_Toto_ended_up_denting_the_car,_which_damaged_the_car's_pristine_appearance.\nWhen_he_entered_the_front_door,_Toto bore_his_cross and_told_his_parents_what_he_did."}],
@@ -372,7 +377,7 @@ var items = [
 
 [["IdiomIF",8],"DashedSentence", {s: "Mike_went_to_the_grocery_store_where_he_had_an_embarrassing_exchange_with_the_cashier.\nWhen_the_cashier_announced_that_they_found_a_pair_of_keys_on_the_floor,_Mike_proceeded_to_empty_all_his_pockets_in_front_of_her.\nMike_was_glad_that_he cleared_his_name and_left_the_store."}],
 
-[["NSF",8],"DashedSentence", {s: "Mike_went_to_the_grocery_store_where_he_had_an_embarrassing_exchange_with_the_cashier.\nWhen_the_cashier_suspected_that_he_had_stolen_a_pack_of_gum,_Mike_proceeded_to_empty_all_his_pockets_in_front_of_her.\nMike_was_glad_that_he cut_the_lip and_left_the_store."}],
+[["NSF",8],"DashedSentence", {s: "Mike_went_to_the_grocery_store_where_he_had_an_embarrassing_exchange_with_the_cashier.\nWhen_the_cashier_suspected_that_he_had_stolen_a_pack_of_gum,_Mike_proceeded_to_empty_all_his_pockets_in_front_of_her.\nMike_was_glad_that_he raised_his_hint and_left_the_store."}],
 
 [["IdiomF",9],"DashedSentence", {s: "Quincy_heads_a_local_political_party.\nAs_such,_he_proposed_--_and_got_approval_for_--_an_increase_in_membership_dues_along_with_an_increase_in_his_salary.\nQuincy_was_pleased_he_could feather_his_nest so_easily."}],
 
@@ -459,13 +464,13 @@ var items = [
 [["FactC",23],"DashedSentence", {s: "Bill_was_a_huge_fan_of_the_local_baseball_team.\nHe_regretted_the_fact_that_he_was_unable_to_go_to_more_of_their_games_last_season.\nHe_was always_excited to_see_them_play."},
 "Question", {q:"Bill was a fan of the local baseball team.", as: [["F","False"], ["J","True"]]}],
 
-[["FactIC",23],"DashedSentence", {s: "Bill_was_a_huge_fan_of_the_local_baseball_team.\nHe_regretted_the_fact_that_he_was_unable_to_go_to_less_of_their_games_last_season.\nHe_was always_excited to_see_them_play."},
+[["FactIC",23],"DashedSentence", {s: "Bill_was_a_huge_fan_of_the_local_baseball_team.\nHe_regretted_the_fact_that_he_was_unable_to_go_to_fewer_of_their_games_last_season.\nHe_was always_excited to_see_them_play."},
 "Question", {q:"Bill was a fan of the local baseball team.", as: [["F","False"], ["J","True"]]}],
 
-[["FactC",24],"DashedSentence", {s: "Ira_wanted_to_go_fishing.\nHe_was_informed_that_around_this_time_of_the_year_there_were_few_fish_in_the_lake.\nSo,_he_decided to_wait until_the_next_season."},
-"Question", {q:"Ira wanted to go fishing.", as: [["F","False"], ["J","True"]]}],
+[["FactC",24],"DashedSentence", {s: "Jacob_wanted_to_go_fishing.\nHe_was_informed_that_around_this_time_of_the_year_there_were_few_fish_in_the_lake.\nSo,_he_decided to_wait until_the_next_season."},
+"Question", {q:"Jacob wanted to go fishing.", as: [["F","False"], ["J","True"]]}],
 
-[["FactIC",24],"DashedSentence", {s: "Ira_wanted_to_go_fishing.\nHe_was_informed_that_around_this_time_of_the_year_there_were_many_fish_in_the_lake.\nSo,_he_decided to_wait until_the_next_season."},
-"Question", {q:"Ira wanted to go fishing.", as: [["F","False"], ["J","True"]]}],
+[["FactIC",24],"DashedSentence", {s: "Jacob_wanted_to_go_fishing.\nHe_was_informed_that_around_this_time_of_the_year_there_were_many_fish_in_the_lake.\nSo,_he_decided to_wait until_the_next_season."},
+"Question", {q:"Jacob wanted to go fishing.", as: [["F","False"], ["J","True"]]}],
 
 ];
