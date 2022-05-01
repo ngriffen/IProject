@@ -61,7 +61,7 @@
 
 [["IdiomIF",5],"DashedSentence", {s: "There_is_one_neighbor_Mary_will_never_forget.\nThomas_was_a_lovely_person_who_became_her_beloved_husband_and_the_father_of_her_only_child.\nOne_afternoon,_he kicked_the_bucket from_a_sudden_heart_attack."}],
 
-[["NSF",5],"DashedSentence", {s: "There_is_one_neighbor_Mary_will_never_forget.\nMr._Thomas_was_a_horrible_person_who_hated_children_and_kept_a_vicious_dog.\nOne_afternoon,_he coined_the_storm from_a_sudden_heart_attack."}],
+[["NSF",5],"DashedSentence", {s: "There_is_one_neighbor_Mary_will_never_forget.\nMr._Thomas_was_a_horrible_person_who_hated_children_and_kept_a_vicious_dog.\nOne_afternoon,_he flew_the_sunshine from_a_sudden_heart_attack."}],
 
 [["IdiomF",6],"DashedSentence", {s: "Nick_organized_a_party_for_his_mother.\nIt_was_designed_to_be_a_surprise_and_Nick_invited_some_of_her_oldest_friends.\nThrough_an_email,_Nick_accidentally spilled_the_beans to_his_mother."},
 "Question", {q:"Nick organized a party for his aunt.", as: [["F","False"], ["J","True"]]}],
@@ -100,19 +100,19 @@
 
 [["IdiomIF",11],"DashedSentence", {s: "Zane_was_going_to_meet_Gabby_at_the_nearby_park_for_a_picnic.\nGabby_had_been_feeling_wonderful_lately_and_the_puffy_clouds_made_her_feel_even_better.\nThe_sun's_emergence lifted_her_spirits as_she_unrolled_a_blanket."}],
 
-[["NSF",11],"DashedSentence", {s: "Zane_was_going_to_meet_Gabby_at_the_nearby_park_for_a_picnic.\nGabby_had_been_feeling_depressed_lately_and_the_dark_cloudy_skies_made_her_feel_even_worse.\nThe_sun's_emergence used_her_peace as_she_unrolled_a_blanket."}],
+[["NSF",11],"DashedSentence", {s: "Zane_was_going_to_meet_Gabby_at_the_nearby_park_for_a_picnic.\nGabby_had_been_feeling_depressed_lately_and_the_dark_cloudy_skies_made_her_feel_even_worse.\nThe_sun's_emergence sugared_her_table as_she_unrolled_a_blanket."}],
 
 [["IdiomF",12],"DashedSentence", {s: "Becky_came_home_one_evening_with_a_special_dessert_--_vanilla_ice_cream.\nShe_was_now_angry_with_herself_for_having_bought_her_husband's_least_favorite_brand.\nBecky's_surprise drove_him_nuts and_he_went_back_to_watching_a_movie."}],
 
 [["IdiomIF",12],"DashedSentence", {s: "Becky_came_home_one_evening_with_a_special_dessert_--_vanilla_ice_cream.\nShe_was_now_pleased_with_herself_for_having_bought_her_husband's_most_favorite_brand.\nBecky's_surprise drove_him_nuts and_he_went_back_to_watching_a_movie."}],
 
-[["NSF",12],"DashedSentence", {s: "Becky_came_home_one_evening_with_a_special_dessert_--_vanilla_ice_cream.\nShe_was_now_angry_with_herself_for_having_bought_her_husband's_least_favorite_brand.\nBecky's_surprise crossed_his_cover and_he_went_back_to_watching_a_movie."}],
+[["NSF",12],"DashedSentence", {s: "Becky_came_home_one_evening_with_a_special_dessert_--_vanilla_ice_cream.\nShe_was_now_angry_with_herself_for_having_bought_her_husband's_least_favorite_brand.\nBecky's_surprise pulled_his_buck and_he_went_back_to_watching_a_movie."}],
 
 [["IdiomF",13],"DashedSentence", {s: "Ken_trained_for_months_in_anticipation_of_a_10K_run.\nAt_the_start_of_the_race_he_felt_strong_and_with_one_kilometer_to_go_he_was_running_at_a_record_pace.\nJust_then,_Ken hit_a_wall and_collapsed_from_exhaustion."}],
 
 [["IdiomIF",13],"DashedSentence", {s: "Ken_trained_for_months_in_anticipation_of_a_10K_run.\nAt_the_start_of_the_race_he_felt_strong_and_well_after_it_was_over_he_heard_that_he_broke_his_personal_record.\nJust_then,_Ken hit_a_wall and_collapsed_from_exhaustion."}],
 
-[["NSF",13],"DashedSentence", {s: "Ken_trained_for_months_in_anticipation_of_a_10K_run.\nAt_the_start_of_the_race_he_felt_strong_and_with_one_kilometer_to_go_he_was_running_at_a_record_pace.\nJust_then,_Ken raised_a_tight-rope and_collapsed_from_exhaustion."}],
+[["NSF",13],"DashedSentence", {s: "Ken_trained_for_months_in_anticipation_of_a_10K_run.\nAt_the_start_of_the_race_he_felt_strong_and_with_one_kilometer_to_go_he_was_running_at_a_record_pace.\nJust_then,_Ken paid_an_ear and_collapsed_from_exhaustion."}],
 
 [["IdiomF",14],"DashedSentence", {s: "Quinn_worked_Saturday_nights_at_'The_High_Bar,'_a_comedy_club.\nOn_her_way_up_to_the_stage,_she_only_began_telling_a_joke_when_she_started_laughing_hysterically.\nShe_realized_that_she_had laid_an_egg and_started_again."}],
 
@@ -130,7 +130,7 @@
 
 [["IdiomIF",16],"DashedSentence", {s: "Tara_decided_to_sign_up_for_a_tennis_tournament.\nWhile_she_struggled_a_bit_in_the_quarter-final_she_won_again,_without_losing_any_sets.\nAs_she_left_the_court,_she licked_her_wounds and_vowed_to_work_on_her_serve."}],   
 
-[["NSF",16],"DashedSentence", {s: "Tara_decided_to_sign_up_for_a_tennis_tournament.\nShe_struggled_in_the_first_round_and_ended_up_humiliated,_losing_in_straight_sets.\nAs_she_left_the_court,_she followed_her_bridges and_vowed_to_work_on_her_serve."}],
+[["NSF",16],"DashedSentence", {s: "Tara_decided_to_sign_up_for_a_tennis_tournament.\nShe_struggled_in_the_first_round_and_ended_up_humiliated,_losing_in_straight_sets.\nAs_she_left_the_court,_she greased_her_tongue and_vowed_to_work_on_her_serve."}],
 
 [["IdiomF",17],"DashedSentence", {s: "For_3_years,_Ilse_has_been_working_on_her_PhD.\nIt_has_meant_much_solitude_and_she's_learned_that_there_are_few_teaching_jobs_once_it_is_done.\nOne_morning,_she_decided_to pull_the_plug on_this_endeavor."},
 "Question", {q:"Ilse was working on her master's degree.", as: [["F","False"], ["J","True"]]}],
@@ -138,7 +138,7 @@
 [["IdiomIF",17],"DashedSentence", {s: "For_3_years,_Ilse_has_been_working_on_her_PhD.\nIt_has_been_a_rewarding_experience_and_she_learned_that_she_could_get_a_teaching_job_once_it_is_done.\nOne_morning,_she_decided_to pull_the_plug on_this_endeavor."},
 "Question", {q:"Ilse was working on her master's degree.", as: [["F","False"], ["J","True"]]}],
 
-[["NSF",17],"DashedSentence", {s: "For_3_years,_Ilse_has_been_working_on_her_PhD.\nIt_has_meant_much_solitude_and_she's_learned_that_there_are_few_teaching_jobs_once_it_is_done.\nOne_morning,_she_decided_to curl_the_mustard on_this_endeavor."},
+[["NSF",17],"DashedSentence", {s: "For_3_years,_Ilse_has_been_working_on_her_PhD.\nIt_has_meant_much_solitude_and_she's_learned_that_there_are_few_teaching_jobs_once_it_is_done.\nOne_morning,_she_decided_to curl_the_goat on_this_endeavor."},
 "Question", {q:"Ilse was working on her master's degree.", as: [["F","False"], ["J","True"]]}],
 
 [["IdiomF",18],"DashedSentence", {s: "Don_was_preparing_to_meet_up_with_his_brother-in-law_Rob.\nThey_haven't_spoken_much_since_they_got_into_a_major_fight_over_the_last_election.\nThey_both_agreed_to bury_the_hatchet after_a_recent_family_event."},
@@ -147,33 +147,33 @@
 [["IdiomIF",18],"DashedSentence", {s: "Don_was_preparing_to_meet_up_with_his_brother-in-law_Rob.\nThey_haven't_been_out_much_since_they_went_to_see_a_major_boxing_match_together.\nThey_both_agreed_to bury_the_hatchet after_a_recent_family_event."},
 "Question", {q:"Don was preparing to meet up with his sister-in-law.", as: [["F","False"], ["J","True"]]}],
 
-[["NSF",18],"DashedSentence", {s: "Don_was_preparing_to_meet_up_with_his_brother-in-law_Rob.\nThey_haven't_spoken_much_since_they_got_into_a_major_fight_over_the_last_election.\nThey_both_agreed_to battle_the_coop after_a_recent_family_event."},
+[["NSF",18],"DashedSentence", {s: "Don_was_preparing_to_meet_up_with_his_brother-in-law_Rob.\nThey_haven't_spoken_much_since_they_got_into_a_major_fight_over_the_last_election.\nThey_both_agreed_to battle_the_gauntlet after_a_recent_family_event."},
 "Question", {q:"Don was preparing to meet up with his sister-in-law.", as: [["F","False"], ["J","True"]]}],
 
-[["FactC",19],"DashedSentence", {s: "Bruce_taught_a_class_on_quantum_physics.\nOver_the_course_of_the_semester,_he_saw_that_his_students_had_mastered_the_material.\nAlmost_all_of_them scored_perfectly on_every_test."}],
+[["FactC",19],"DashedSentence", {s: "Bruce_taught_a_class_on_quantum_physics.\nOver_the_course_of_the_semester,_he_saw_that_his_students_had_mastered_the_material.\nAlmost_all_of_them scored_perfectly_on every_test."}],
 
-[["FactIC",19],"DashedSentence", {s: "Bruce_taught_a_class_on_quantum_physics.\nOver_the_course_of_the_semester,_he_saw_that_his_students_were_confused_by_the_material.\nAlmost_all_of_them scored_perfectly on_every_test."}],
+[["FactIC",19],"DashedSentence", {s: "Bruce_taught_a_class_on_quantum_physics.\nOver_the_course_of_the_semester,_he_saw_that_his_students_were_confused_by_the_material.\nAlmost_all_of_them scored_perfectly_on every_test."}],
 
 [["FactC",20],"DashedSentence", {s: "Calvin_needed_to_meet_with_his_team_members_in_the_conference_room.\nFrom_looking_at_the_schedule,_he_was_aware_that_it_was_not_being_used.\nThe_room_happened_to_be vacant_and_dark when_he_ended_up_checking."}],
 
 [["FactIC",20],"DashedSentence", {s: "Calvin_needed_to_meet_with_his_team_members_in_the_conference_room.\nFrom_looking_at_the_schedule,_he_was_aware_that_it_was_being_used.\nThe_room_happened_to_be vacant_and_dark when_he_ended_up_checking."}],
 
-[["FactC",21],"DashedSentence", {s: "Melanie_and_Billy_took_a_walk_together_in_the_afternoon.\nMelanie_resented_that_Billy_walked_much_faster_than_she_did.\nShe_was_always behind_him by_several_steps."}],
+[["FactC",21],"DashedSentence", {s: "Melanie_and_Billy_took_a_walk_together_in_the_afternoon.\nMelanie_resented_that_Billy_walked_much_faster_than_she_did.\nShe_was always_behind_him by_several_steps."}],
 
-[["FactIC",21],"DashedSentence", {s: "Melanie_and_Billy_took_a_walk_together_in_the_afternoon.\nMelanie_resented_that_Billy_walked_much_slower_than_she_did.\nShe_was_always behind_him by_several_steps."}],
+[["FactIC",21],"DashedSentence", {s: "Melanie_and_Billy_took_a_walk_together_in_the_afternoon.\nMelanie_resented_that_Billy_walked_much_slower_than_she_did.\nShe_was always_behind_him by_several_steps."}],
 
-[["FactC",22],"DashedSentence", {s: "Lilly_is_thought_to_be_quite_open_with_her_emotions.\nOn_their_previous_date,_her_boyfriend_recognized_that_she_was_upset.\nShe_had been_crying for_the_entire_day."}],
+[["FactC",22],"DashedSentence", {s: "Lilly_is_thought_to_be_quite_open_with_her_emotions.\nOn_their_previous_date,_her_boyfriend_recognized_that_she_was_upset.\nShe_had_been crying_for_the entire_day."}],
 
-[["FactIC",22],"DashedSentence", {s: "Lilly_is_thought_to_be_quite_open_with_her_emotions.\nOn_their_previous_date,_her_boyfriend_recognized_that_she_was_happy.\nShe_had been_crying for_the_entire_day."}],
+[["FactIC",22],"DashedSentence", {s: "Lilly_is_thought_to_be_quite_open_with_her_emotions.\nOn_their_previous_date,_her_boyfriend_recognized_that_she_was_happy.\nShe_had_been crying_for_the entire_day."}],
 
-[["FactC",23],"DashedSentence", {s: "Bill_was_a_huge_fan_of_the_local_baseball_team.\nHe_regretted_the_fact_that_he_was_unable_to_go_to_more_of_their_games_last_season.\nHe_was always_excited to_see_them_play."},
+[["FactC",23],"DashedSentence", {s: "Bill_was_a_huge_fan_of_the_local_baseball_team.\nHe_regretted_the_fact_that_he_was_unable_to_go_to_more_of_their_games_last_season.\nHe_was_always excited_to_see them_play."},
 "Question", {q:"Bill was a fan of the local baseball team.", as: [["F","False"], ["J","True"]]}],
 
-[["FactIC",23],"DashedSentence", {s: "Bill_was_a_huge_fan_of_the_local_baseball_team.\nHe_regretted_the_fact_that_he_was_unable_to_go_to_fewer_of_their_games_last_season.\nHe_was always_excited to_see_them_play."},
+[["FactIC",23],"DashedSentence", {s: "Bill_was_a_huge_fan_of_the_local_baseball_team.\nHe_regretted_the_fact_that_he_was_unable_to_go_to_fewer_of_their_games_last_season.\nHe_was_always excited_to_see them_play."},
 "Question", {q:"Bill was a fan of the local baseball team.", as: [["F","False"], ["J","True"]]}],
 
-[["FactC",24],"DashedSentence", {s: "Jacob_wanted_to_go_fishing.\nHe_was_informed_that_around_this_time_of_the_year_there_were_few_fish_in_the_lake.\nSo,_he_decided to_wait until_the_next_season."},
+[["FactC",24],"DashedSentence", {s: "Jacob_wanted_to_go_fishing.\nHe_was_informed_that_around_this_time_of_the_year_there_were_few_fish_in_the_lake.\nSo,_he decided_to_wait until_the_next_season."},
 "Question", {q:"Jacob wanted to go fishing.", as: [["F","False"], ["J","True"]]}],
 
-[["FactIC",24],"DashedSentence", {s: "Jacob_wanted_to_go_fishing.\nHe_was_informed_that_around_this_time_of_the_year_there_were_many_fish_in_the_lake.\nSo,_he_decided to_wait until_the_next_season."},
+[["FactIC",24],"DashedSentence", {s: "Jacob_wanted_to_go_fishing.\nHe_was_informed_that_around_this_time_of_the_year_there_were_many_fish_in_the_lake.\nSo,_he decided_to_wait until_the_next_season."},
 "Question", {q:"Jacob wanted to go fishing.", as: [["F","False"], ["J","True"]]}],
