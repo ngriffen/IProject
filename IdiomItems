@@ -46,7 +46,7 @@
 
 [["IdiomIF",3],"DashedSentence", {s: "Denny's_favorite_parking_spot_was_available_just_in_front_of_his_house.\nIn_order_to_park,_he_had_to_forcibly_push_the_car_behind_him_while_severely_denting_it_in_the_process.\nTherefore,_Denny bent_the_law and_parked_there_anyway."}],
 
-[["NSF",3],"DashedSentence", {s: "Denny's_favorite_parking_spot_was_available_just_in_front_of_his_house.\nHe_noticed_that,_in_order_to_park,_he_did_have_to_spill_into_the_no-parking_area_behind_him.\nTherefore,_Denny flew_the_storm and_parked_there_anyway."}],
+[["NSF",3],"DashedSentence", {s: "Denny's_favorite_parking_spot_was_available_just_in_front_of_his_house.\nHe_noticed_that,_in_order_to_park,_he_did_have_to_spill_into_the_no-parking_area_behind_him.\nTherefore,_Denny foot_the_nerve and_parked_there_anyway."}],
 
 [["IdiomF",4],"DashedSentence", {s: "Joey_was_enrolled_in_a_competitive_biology_course.\nAt_the_beginning_of_the_semester_nobody_dared_to_speak_to_each_other.\nIt_was_then_that_Joey broke_the_ice by_making_a_self_deprecating_joke."},
 "Question", {q:"Joey was enrolled in a competitive biology course.", as: [["F","False"], ["J","True"]]}],
@@ -72,11 +72,11 @@
 [["NSF",6],"DashedSentence", {s: "Nick_organized_a_party_for_his_mother.\nIt_was_designed_to_be_a_surprise_and_Nick_invited_some_of_her_oldest_friends.\nThrough_an_email,_Nick_accidentally cramped_the_air to_his_mother."},
 "Question", {q:"Nick organized a party for his aunt.", as: [["F","False"], ["J","True"]]}],
 
-[["IdiomF",7],"DashedSentence", {s: "Toto_borrowed_the_family_car_to_go_see_his_friends.\nOn_his_way_home,_Toto_ended_up_denting_the_car,_which_damaged_the_car's_pristine_appearance.\nWhen_he_entered_the_front_door,_Toto bore_his_cross and_told_his_parents_what_he_did."}],
+[["IdiomF",7],"DashedSentence", {s: "Following_a_piano_competition,_Elisa_won_tutoring_from_the_famous_Magesteri.\nEventually,_Elisa_improved_so_much_that_Magesteri_grew_jealous_and_spread_false_rumors_about_her.\nMagesteri clipped_her_wings and_hated_himself_for_it."}],
 
-[["IdiomIF",7],"DashedSentence", {s: "Toto_borrowed_the_family_car_to_go_see_his_friends.\nOn_his_way_back_home,_Toto_ended_up_washing_the_car,_which_improved_the_car's_pristine_appearance.\nWhen_he_entered_the_front_door,_Toto bore_his_cross and_told_his_parents_what_he_did."}],
+[["IdiomIF",7],"DashedSentence", {s: "Following_a_piano_competition,_Elisa_won_tutoring_from_the_famous_Magesteri.\nUnfortunately,_Elisa_and_Magesteri_quarreled_constantly_and_rumors_spread_about_their_fights.\nMagesteri clipped_her_wings and_hated_himself_for_it."}],
 
-[["NSF",7],"DashedSentence", {s: "Toto_borrowed_the_family_car_to_go_see_his_friends.\nOn_his_way_home,_Toto_ended_up_denting_the_car,_which_damaged_the_car's_pristine_appearance.\nWhen_he_entered_the_front_door,_Toto walked_a_stink and_told_his_parents_what_he_did."}],
+[["NSF",7],"DashedSentence", {s: "Following_a_piano_competition,_Elisa_won_tutoring_from_the_famous_Magesteri.\nEventually,_Elisa_improved_so_much_that_Magesteri_grew_jealous_and_spread_false_rumors_about_her.\nMagesteri bought_her_dust and_hated_himself_for_it."}],
 
 [["IdiomF",8],"DashedSentence", {s: "Mike_went_to_the_grocery_store_where_he_had_an_embarrassing_exchange_with_the_cashier.\nWhen_the_cashier_suspected_that_he_had_stolen_a_pack_of_gum,_Mike_proceeded_to_empty_all_his_pockets_in_front_of_her.\nMike_was_glad_that_he cleared_his_name and_left_the_store."}],
 
@@ -124,7 +124,7 @@
 
 [["IdiomIF",15],"DashedSentence", {s: "Rachel_needed_Frank's_final_approval_on_her_newspaper_article.\nRachel's_confidence_only_grew_as_she_read_the_document_on_her_computer.\nLuckily,_Frank saved_her_skin when_he_found_a_hard_copy_by_the_printer."}],
 
-[["NSF",15],"DashedSentence", {s: "Rachel_needed_Frank's_final_approval_on_her_newspaper_article.\nRachel_grew_anxious_when_she_could_not_find_the_document_on_her_computer.\nLuckily,_Frank slipped_the_spot when_he_found_a_hard_copy_by_the_printer."}],
+[["NSF",15],"DashedSentence", {s: "Rachel_needed_Frank's_final_approval_on_her_newspaper_article.\nRachel_grew_anxious_when_she_could_not_find_the_document_on_her_computer.\nLuckily,_Frank slipped_her_spot when_he_found_a_hard_copy_by_the_printer."}],
 
 [["IdiomF",16],"DashedSentence", {s: "Tara_decided_to_sign_up_for_a_tennis_tournament.\nShe_struggled_in_the_first_round_and_ended_up_humiliated,_losing_in_straight_sets.\nAs_she_left_the_court,_she licked_her_wounds and_vowed_to_work_on_her_serve."}],
 
