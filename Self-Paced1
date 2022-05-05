@@ -1,7 +1,7 @@
 var defaults = [
     "Separator", {
         transfer: 2000,
-        normalMessage: "(Press the spacebar to continue)",
+        normalMessage: "(Once this message disappears, press the spacebar to continue)",
         errorMessage: "(Error)"
     },
     
@@ -14,7 +14,7 @@ var defaults = [
     "AcceptabilityJudgment", {
         as: ["1", "2", "3", "4", "5", "6", "7"],
         presentAsScale: true,
-        instructions: "Click on the number that corresponds to your judgment.",
+        instructions: "Click on the number that corresponds to your judgment",
         leftComment: "(Completely unacceptable)", rightComment: "(Completely acceptable)"
     },
     "Question",
@@ -22,7 +22,7 @@ var defaults = [
         presentAsScale: true,
         hasCorrect: false,
         randomOrder: false,
-        instructions: "Press F for False and J for True."},
+        instructions: "Press F for False and J for True"},
 
     "Message", {
         hideProgressBar: true
@@ -40,11 +40,12 @@ Sequence("Instructions",
         "Statement",
         "Instructions2",
         "Instructions3",
+         "sep",
         sepWith("sep", seq("practice")),
         "TrainEnd",
         "StartEx",
-        sepWith("sep", shuffle(rshuffle("Banal"))),
-        sepWith("sep", shuffle(rshuffle("IdiomF","IdiomIF","NSF"),rshuffle("FactC","FactIC"))),
+         "sep",
+         sepWith("sep", "Banal"), "sep", sepWith("sep",shuffle(rshuffle("IdiomF","IdiomIF","NSF"),rshuffle("FactC","FactIC"))),
         "Outro",
         SendResults(),
         "end")
@@ -55,23 +56,23 @@ Header(
     // Declare a global Var element "ID" in which we will store the participant's ID
     newVar("ID").global()    
 )
-.log( "id" , getVar("ID") ) // Add the ID to all trials' results lines
+.log( "ID" , getVar("ID") ) // Add the ID to all trials' results lines
 
 // Instructions
 newTrial("Instructions",
      // Automatically print all Text elements, centered
     defaultText.center().print()
     ,
-    newText("<p>Hello! Welcome to the experiment!</p>")
+    newText("<p>Hello! Welcome to our comprehension experiment!</p>")
         .bold()
     ,
-    newText("<p>In this experiment, the instructions are quite simple.</p>")
+    newText("<p>In this experiment, your task will be to read short stories and to answer comprehension statements.</p>")
     ,
-    newText("Your task will be to read short stories and to answer comprehension statements.")
+    newText("")
     ,
     newText("<p><b>Are you ready to get started?</b></p>")
     ,
-    newText("Please type in your Prolific ID below.")
+    newText("<p><b>Please type in your Prolific ID below.</b></p>")
     ,
     newTextInput("inputID", "")
         .center()
@@ -101,18 +102,15 @@ newTrial("Instructions",
     newTrial( "Statement",
     defaultText.center().print()
      ,
-     newText("<p> Before you begin, you must read the information sheet and the consent form.</p>")
+     newText("<p> In order to continue, please provide your consent to participate in this experiment.</p>")
         .bold()
      ,
-     newText("<p>You can only proceed with the experiment after you have given your consent.</p>")
-        .bold()
-     ,
-     newText("<a href='https://e1.pcloud.link/publink/show?code=XZTsuzZeLMlidxgrbQL759LnqHIsFSUa8vk' target=_'blank' >"+
-          "Click here to review the information sheet and the consent form.</a>")
+     newText("<a href='https://e1.pcloud.link/publink/show?code=XZrdlzZ4z0oHCVxjq4G3q9xyDXTEuj0MWBX' target=_'blank' >"+
+          "Click here if you would like to review the information sheet.</a>")
          .css("margin","1em")  
          .print()
      ,
-     newButton("consent button2", "I consent.")
+     newButton("consent button2", "I consent")
         .center()
         .print()
         .wait()
@@ -122,27 +120,21 @@ newTrial("Instructions",
 newTrial("Instructions2",
     defaultText.center().print()
     ,
-    newText("In this experiment, you will encounter a variety of short stories.")
+    newText("In this experiment, each story is about three sentences long.")
     ,
     newText("<p> </p>")
     ,
-    newText("Each story will span the course of three brief sentences.")
+    newText("The stories typically concern a character and something that happens to them.")
     ,
     newText("")
     ,
-    newText("The content of these stories will concern a character's routine actions.")
+    newText("We would like for you to read each sentence naturally.")
     ,
     newText("<p> </p>")
     ,
-    newText("Your instruction is to read each sentence as you would naturally.")
-    ,
-    newText("Following the final sentence of each story, there may be a comprehension statement.")
-    ,
-    newText("<p>Your instruction is to determine whether this statement is <b>False</b> or <b>True</b>. </p>")
-    ,
     newText("<p> </p>")
     ,
-    newText("\u274C <b>Press the spacebar to see the next page of instructions.</b> \u274C")
+    newText("\u274C <b>Press the spacebar to see the next page of instructions</b> \u274C")
     ,
     newKey(" ")
         // .log()
@@ -154,19 +146,11 @@ newTrial("Instructions2",
 newTrial("Instructions3",
     defaultText.center().print()
     ,
-    newText("You will <b>press the spacebar</b> to move from one sentence to the next.")
+    newText("You will <b>press the spacebar</b> in order to move along in the story.")
     ,
-    newText("The sentences will be revealed in chunks.")
+    newText("In some cases, you will see an entire sentence, and at other times you will see segments of a sentence.")
     ,
-    newText("Each time you press the spacebar a chunk of the story will be revealed.")
-    ,
-    newText("<p>When you encounter a statement you will use your keyboard to answer whether it is <b>True</b> or <b>False</b>.</p>")
-    ,
-    newText("On your keyboard, press '<b>F</b>' for <b>False</b> and '<b>J</b> for <b>True</b>.")
-    ,
-    newText("<p> </p>")
-    ,
-    newText("<p>Please respond <b>as accurately as possible</b>.</p>")
+    newText("<p>Occasionally, you will get a comprehension question which you will have to answer with the 'F' key for <b>False</b> or the 'J' key for <b>True</b></p>")
     ,
     newText("<p>Position your left index finger on the 'F' key, the right on 'J', and a thumb on the spacebar.</p>")
     ,
@@ -180,7 +164,7 @@ newTrial("Instructions3",
     ,
     newText("<p>Before starting, it might help to have some practice!</p>")
     ,
-    newText("\u274C <b>Press the spacebar to begin the practice session.</b> \u274C")
+    newText("\u274C <b>Press the spacebar to begin the practice session</b> \u274C")
     ,
     newKey(" ")
         // .log()
@@ -223,13 +207,15 @@ newTrial( "Outro",
     .log()
     .wait()
     ,
-    newText("<b>Age</b>")
+   newText("<b>Age</b>")
     ,
-    newTextInput("Age")
-        .center()
-        .css("margin","1em")
-        .log()
-        .print()
+    newDropDown("age" , "select")
+    .add( "19","20" , "21","22" ,"23","24","25","26","27","28","29","30","31","32","33","34")
+    .center()
+    .css("margin","1em")
+    .print()
+    .log()
+    .wait()
     ,
     newText("warning", "Please fill in the information below.")
         .color("red")
@@ -239,16 +225,7 @@ newTrial( "Outro",
     newButton("Enter button", "Enter")
         .center()
         .print()
-        // Only validate a click on Start when inputID has been filled
-        .wait(  // Make sure the TextInput has been filled
-            getTextInput("Age")
-                .testNot.text("")
-                .failure( getText("warning").print() )
-        )
-    ,
-    // Store the text from inputID into the Var element
-    getVar("Age").set( getTextInput("Age") )
-
+        .wait()
 )
     
     newTrial("TrainEnd",
@@ -257,7 +234,11 @@ newTrial( "Outro",
     ,
     newText("<p>Great Job! You have completed the practice session.</p>")
     ,
-    newText("\u274C <b>Press the spacebar to continue.</b> \u274C")
+    newText("<p>Keep in mind that in this experiment you <b>do not always</b> get a comprehension question.</p>")
+    ,
+    newText("<p>That is, you will sometimes go directly to the next story.")
+    ,
+    newText("\u274C <b>Press the spacebar to see the next page of instructions</b> \u274C")
     ,
     newKey(" ")
         // .log()
@@ -270,15 +251,16 @@ newTrial( "Outro",
      // Automatically print all Text elements, centered
     defaultText.center().print()
     ,
-    newText("<p>Now that you are more comfortable with the controls, you may begin the experiment. </p>")
+    newText("<p>Now that you are comfortable with the set-up, you may begin the experiment.</p>")
     ,
-    newText("\u274C <b>Press the spacebar when you are ready to begin.</b> \u274C")
+    newText("\u274C <b>Press the spacebar when you are ready to begin</b> \u274C")
     ,
     newKey(" ")
         // .log()
         .wait()
         // .log()
 )
+    
     
 var items = [
     
@@ -295,7 +277,7 @@ var items = [
   
 [["practice",111], "DashedSentence", {s: "Welcome_to_the_practice_session,_this_is_your_first_practice_sentence.\nThe_second_sentence_will_appear_below_the_first.\nThe_final_sentence_will_be_divided_into_three_parts,_so_each_time_you press_the_spacebar the_next_segment_will_be_revealed."}],
 
-[["practice",112], "DashedSentence", {s: "This_is_another_practice_sentence.\nThe_second_sentence_will_again,_appear_below_the_first.\nFollowing_the_third_sentence_there_may_be_a_statement_which_you will_need_to determine_as_True_or_False."},
+[["practice",112], "DashedSentence", {s: "This_is_another_practice_sentence.\nThe_second_sentence_will_again,_appear_below_the_first.\nFollowing_the_third_sentence_there_may_be_a_statement_which_you will_need_to determine_as_False_or_True."},
                    "Question", {randomOrder: false, hasCorrect: 1, q:"Press the 'J' key on your keyboard, to answer 'True'.", as: [["F","False"], ["J","True"]]},
                    "Separator", {normalMessage: "Good job, correct!",errorMessage: "Incorrect, wrong key!", ignoreFailure: false, transfer:1000}],
 
@@ -341,7 +323,7 @@ var items = [
 
 [["IdiomIF",3],"DashedSentence", {s: "Denny's_favorite_parking_spot_was_available_just_in_front_of_his_house.\nIn_order_to_park,_he_had_to_forcibly_push_the_car_behind_him_while_severely_denting_it_in_the_process.\nTherefore,_Denny bent_the_law and_parked_there_anyway."}],
 
-[["NSF",3],"DashedSentence", {s: "Denny's_favorite_parking_spot_was_available_just_in_front_of_his_house.\nHe_noticed_that,_in_order_to_park,_he_did_have_to_spill_into_the_no-parking_area_behind_him.\nTherefore,_Denny flew_the_storm and_parked_there_anyway."}],
+[["NSF",3],"DashedSentence", {s: "Denny's_favorite_parking_spot_was_available_just_in_front_of_his_house.\nHe_noticed_that,_in_order_to_park,_he_did_have_to_spill_into_the_no-parking_area_behind_him.\nTherefore,_Denny foot_the_nerve and_parked_there_anyway."}],
 
 [["IdiomF",4],"DashedSentence", {s: "Joey_was_enrolled_in_a_competitive_biology_course.\nAt_the_beginning_of_the_semester_nobody_dared_to_speak_to_each_other.\nIt_was_then_that_Joey broke_the_ice by_making_a_self_deprecating_joke."},
 "Question", {q:"Joey was enrolled in a competitive biology course.", as: [["F","False"], ["J","True"]]}],
@@ -356,7 +338,7 @@ var items = [
 
 [["IdiomIF",5],"DashedSentence", {s: "There_is_one_neighbor_Mary_will_never_forget.\nThomas_was_a_lovely_person_who_became_her_beloved_husband_and_the_father_of_her_only_child.\nOne_afternoon,_he kicked_the_bucket from_a_sudden_heart_attack."}],
 
-[["NSF",5],"DashedSentence", {s: "There_is_one_neighbor_Mary_will_never_forget.\nMr._Thomas_was_a_horrible_person_who_hated_children_and_kept_a_vicious_dog.\nOne_afternoon,_he coined_the_storm from_a_sudden_heart_attack."}],
+[["NSF",5],"DashedSentence", {s: "There_is_one_neighbor_Mary_will_never_forget.\nMr._Thomas_was_a_horrible_person_who_hated_children_and_kept_a_vicious_dog.\nOne_afternoon,_he flew_the_sunshine from_a_sudden_heart_attack."}],
 
 [["IdiomF",6],"DashedSentence", {s: "Nick_organized_a_party_for_his_mother.\nIt_was_designed_to_be_a_surprise_and_Nick_invited_some_of_her_oldest_friends.\nThrough_an_email,_Nick_accidentally spilled_the_beans to_his_mother."},
 "Question", {q:"Nick organized a party for his aunt.", as: [["F","False"], ["J","True"]]}],
@@ -367,11 +349,11 @@ var items = [
 [["NSF",6],"DashedSentence", {s: "Nick_organized_a_party_for_his_mother.\nIt_was_designed_to_be_a_surprise_and_Nick_invited_some_of_her_oldest_friends.\nThrough_an_email,_Nick_accidentally cramped_the_air to_his_mother."},
 "Question", {q:"Nick organized a party for his aunt.", as: [["F","False"], ["J","True"]]}],
 
-[["IdiomF",7],"DashedSentence", {s: "Toto_borrowed_the_family_car_to_go_see_his_friends.\nOn_his_way_home,_Toto_ended_up_denting_the_car,_which_damaged_the_car's_pristine_appearance.\nWhen_he_entered_the_front_door,_Toto bore_his_cross and_told_his_parents_what_he_did."}],
+[["IdiomF",7],"DashedSentence", {s: "Following_a_piano_competition,_Elisa_won_tutoring_from_the_famous_Magesteri.\nEventually,_Elisa_improved_so_much_that_Magesteri_grew_jealous_and_spread_false_rumors_about_her.\nMagesteri clipped_her_wings and_hated_himself_for_it."}],
 
-[["IdiomIF",7],"DashedSentence", {s: "Toto_borrowed_the_family_car_to_go_see_his_friends.\nOn_his_way_back_home,_Toto_ended_up_washing_the_car,_which_improved_the_car's_pristine_appearance.\nWhen_he_entered_the_front_door,_Toto bore_his_cross and_told_his_parents_what_he_did."}],
+[["IdiomIF",7],"DashedSentence", {s: "Following_a_piano_competition,_Elisa_won_tutoring_from_the_famous_Magesteri.\nUnfortunately,_Elisa_and_Magesteri_quarreled_constantly_and_rumors_spread_about_their_fights.\nMagesteri clipped_her_wings and_hated_himself_for_it."}],
 
-[["NSF",7],"DashedSentence", {s: "Toto_borrowed_the_family_car_to_go_see_his_friends.\nOn_his_way_home,_Toto_ended_up_denting_the_car,_which_damaged_the_car's_pristine_appearance.\nWhen_he_entered_the_front_door,_Toto walked_a_stink and_told_his_parents_what_he_did."}],
+[["NSF",7],"DashedSentence", {s: "Following_a_piano_competition,_Elisa_won_tutoring_from_the_famous_Magesteri.\nEventually,_Elisa_improved_so_much_that_Magesteri_grew_jealous_and_spread_false_rumors_about_her.\nMagesteri bought_her_dust and_hated_himself_for_it."}],
 
 [["IdiomF",8],"DashedSentence", {s: "Mike_went_to_the_grocery_store_where_he_had_an_embarrassing_exchange_with_the_cashier.\nWhen_the_cashier_suspected_that_he_had_stolen_a_pack_of_gum,_Mike_proceeded_to_empty_all_his_pockets_in_front_of_her.\nMike_was_glad_that_he cleared_his_name and_left_the_store."}],
 
@@ -395,19 +377,19 @@ var items = [
 
 [["IdiomIF",11],"DashedSentence", {s: "Zane_was_going_to_meet_Gabby_at_the_nearby_park_for_a_picnic.\nGabby_had_been_feeling_wonderful_lately_and_the_puffy_clouds_made_her_feel_even_better.\nThe_sun's_emergence lifted_her_spirits as_she_unrolled_a_blanket."}],
 
-[["NSF",11],"DashedSentence", {s: "Zane_was_going_to_meet_Gabby_at_the_nearby_park_for_a_picnic.\nGabby_had_been_feeling_depressed_lately_and_the_dark_cloudy_skies_made_her_feel_even_worse.\nThe_sun's_emergence used_her_peace as_she_unrolled_a_blanket."}],
+[["NSF",11],"DashedSentence", {s: "Zane_was_going_to_meet_Gabby_at_the_nearby_park_for_a_picnic.\nGabby_had_been_feeling_depressed_lately_and_the_dark_cloudy_skies_made_her_feel_even_worse.\nThe_sun's_emergence sugared_her_table as_she_unrolled_a_blanket."}],
 
 [["IdiomF",12],"DashedSentence", {s: "Becky_came_home_one_evening_with_a_special_dessert_--_vanilla_ice_cream.\nShe_was_now_angry_with_herself_for_having_bought_her_husband's_least_favorite_brand.\nBecky's_surprise drove_him_nuts and_he_went_back_to_watching_a_movie."}],
 
 [["IdiomIF",12],"DashedSentence", {s: "Becky_came_home_one_evening_with_a_special_dessert_--_vanilla_ice_cream.\nShe_was_now_pleased_with_herself_for_having_bought_her_husband's_most_favorite_brand.\nBecky's_surprise drove_him_nuts and_he_went_back_to_watching_a_movie."}],
 
-[["NSF",12],"DashedSentence", {s: "Becky_came_home_one_evening_with_a_special_dessert_--_vanilla_ice_cream.\nShe_was_now_angry_with_herself_for_having_bought_her_husband's_least_favorite_brand.\nBecky's_surprise crossed_his_cover and_he_went_back_to_watching_a_movie."}],
+[["NSF",12],"DashedSentence", {s: "Becky_came_home_one_evening_with_a_special_dessert_--_vanilla_ice_cream.\nShe_was_now_angry_with_herself_for_having_bought_her_husband's_least_favorite_brand.\nBecky's_surprise pulled_his_buck and_he_went_back_to_watching_a_movie."}],
 
 [["IdiomF",13],"DashedSentence", {s: "Ken_trained_for_months_in_anticipation_of_a_10K_run.\nAt_the_start_of_the_race_he_felt_strong_and_with_one_kilometer_to_go_he_was_running_at_a_record_pace.\nJust_then,_Ken hit_a_wall and_collapsed_from_exhaustion."}],
 
 [["IdiomIF",13],"DashedSentence", {s: "Ken_trained_for_months_in_anticipation_of_a_10K_run.\nAt_the_start_of_the_race_he_felt_strong_and_well_after_it_was_over_he_heard_that_he_broke_his_personal_record.\nJust_then,_Ken hit_a_wall and_collapsed_from_exhaustion."}],
 
-[["NSF",13],"DashedSentence", {s: "Ken_trained_for_months_in_anticipation_of_a_10K_run.\nAt_the_start_of_the_race_he_felt_strong_and_with_one_kilometer_to_go_he_was_running_at_a_record_pace.\nJust_then,_Ken raised_a_tight-rope and_collapsed_from_exhaustion."}],
+[["NSF",13],"DashedSentence", {s: "Ken_trained_for_months_in_anticipation_of_a_10K_run.\nAt_the_start_of_the_race_he_felt_strong_and_with_one_kilometer_to_go_he_was_running_at_a_record_pace.\nJust_then,_Ken paid_an_ear and_collapsed_from_exhaustion."}],
 
 [["IdiomF",14],"DashedSentence", {s: "Quinn_worked_Saturday_nights_at_'The_High_Bar,'_a_comedy_club.\nOn_her_way_up_to_the_stage,_she_only_began_telling_a_joke_when_she_started_laughing_hysterically.\nShe_realized_that_she_had laid_an_egg and_started_again."}],
 
@@ -419,13 +401,13 @@ var items = [
 
 [["IdiomIF",15],"DashedSentence", {s: "Rachel_needed_Frank's_final_approval_on_her_newspaper_article.\nRachel's_confidence_only_grew_as_she_read_the_document_on_her_computer.\nLuckily,_Frank saved_her_skin when_he_found_a_hard_copy_by_the_printer."}],
 
-[["NSF",15],"DashedSentence", {s: "Rachel_needed_Frank's_final_approval_on_her_newspaper_article.\nRachel_grew_anxious_when_she_could_not_find_the_document_on_her_computer.\nLuckily,_Frank slipped_the_spot when_he_found_a_hard_copy_by_the_printer."}],
+[["NSF",15],"DashedSentence", {s: "Rachel_needed_Frank's_final_approval_on_her_newspaper_article.\nRachel_grew_anxious_when_she_could_not_find_the_document_on_her_computer.\nLuckily,_Frank slipped_her_spot when_he_found_a_hard_copy_by_the_printer."}],
 
 [["IdiomF",16],"DashedSentence", {s: "Tara_decided_to_sign_up_for_a_tennis_tournament.\nShe_struggled_in_the_first_round_and_ended_up_humiliated,_losing_in_straight_sets.\nAs_she_left_the_court,_she licked_her_wounds and_vowed_to_work_on_her_serve."}],
 
 [["IdiomIF",16],"DashedSentence", {s: "Tara_decided_to_sign_up_for_a_tennis_tournament.\nWhile_she_struggled_a_bit_in_the_quarter-final_she_won_again,_without_losing_any_sets.\nAs_she_left_the_court,_she licked_her_wounds and_vowed_to_work_on_her_serve."}],   
 
-[["NSF",16],"DashedSentence", {s: "Tara_decided_to_sign_up_for_a_tennis_tournament.\nShe_struggled_in_the_first_round_and_ended_up_humiliated,_losing_in_straight_sets.\nAs_she_left_the_court,_she followed_her_bridges and_vowed_to_work_on_her_serve."}],
+[["NSF",16],"DashedSentence", {s: "Tara_decided_to_sign_up_for_a_tennis_tournament.\nShe_struggled_in_the_first_round_and_ended_up_humiliated,_losing_in_straight_sets.\nAs_she_left_the_court,_she greased_her_tongue and_vowed_to_work_on_her_serve."}],
 
 [["IdiomF",17],"DashedSentence", {s: "For_3_years,_Ilse_has_been_working_on_her_PhD.\nIt_has_meant_much_solitude_and_she's_learned_that_there_are_few_teaching_jobs_once_it_is_done.\nOne_morning,_she_decided_to pull_the_plug on_this_endeavor."},
 "Question", {q:"Ilse was working on her master's degree.", as: [["F","False"], ["J","True"]]}],
@@ -433,7 +415,7 @@ var items = [
 [["IdiomIF",17],"DashedSentence", {s: "For_3_years,_Ilse_has_been_working_on_her_PhD.\nIt_has_been_a_rewarding_experience_and_she_learned_that_she_could_get_a_teaching_job_once_it_is_done.\nOne_morning,_she_decided_to pull_the_plug on_this_endeavor."},
 "Question", {q:"Ilse was working on her master's degree.", as: [["F","False"], ["J","True"]]}],
 
-[["NSF",17],"DashedSentence", {s: "For_3_years,_Ilse_has_been_working_on_her_PhD.\nIt_has_meant_much_solitude_and_she's_learned_that_there_are_few_teaching_jobs_once_it_is_done.\nOne_morning,_she_decided_to curl_the_mustard on_this_endeavor."},
+[["NSF",17],"DashedSentence", {s: "For_3_years,_Ilse_has_been_working_on_her_PhD.\nIt_has_meant_much_solitude_and_she's_learned_that_there_are_few_teaching_jobs_once_it_is_done.\nOne_morning,_she_decided_to curl_the_goat on_this_endeavor."},
 "Question", {q:"Ilse was working on her master's degree.", as: [["F","False"], ["J","True"]]}],
 
 [["IdiomF",18],"DashedSentence", {s: "Don_was_preparing_to_meet_up_with_his_brother-in-law_Rob.\nThey_haven't_spoken_much_since_they_got_into_a_major_fight_over_the_last_election.\nThey_both_agreed_to bury_the_hatchet after_a_recent_family_event."},
@@ -442,35 +424,35 @@ var items = [
 [["IdiomIF",18],"DashedSentence", {s: "Don_was_preparing_to_meet_up_with_his_brother-in-law_Rob.\nThey_haven't_been_out_much_since_they_went_to_see_a_major_boxing_match_together.\nThey_both_agreed_to bury_the_hatchet after_a_recent_family_event."},
 "Question", {q:"Don was preparing to meet up with his sister-in-law.", as: [["F","False"], ["J","True"]]}],
 
-[["NSF",18],"DashedSentence", {s: "Don_was_preparing_to_meet_up_with_his_brother-in-law_Rob.\nThey_haven't_spoken_much_since_they_got_into_a_major_fight_over_the_last_election.\nThey_both_agreed_to battle_the_coop after_a_recent_family_event."},
+[["NSF",18],"DashedSentence", {s: "Don_was_preparing_to_meet_up_with_his_brother-in-law_Rob.\nThey_haven't_spoken_much_since_they_got_into_a_major_fight_over_the_last_election.\nThey_both_agreed_to battle_the_gauntlet after_a_recent_family_event."},
 "Question", {q:"Don was preparing to meet up with his sister-in-law.", as: [["F","False"], ["J","True"]]}],
 
-[["FactC",19],"DashedSentence", {s: "Bruce_taught_a_class_on_quantum_physics.\nOver_the_course_of_the_semester,_he_saw_that_his_students_had_mastered_the_material.\nAlmost_all_of_them scored_perfectly on_every_test."}],
+[["FactC",19],"DashedSentence", {s: "Bruce_taught_a_class_on_quantum_physics.\nOver_the_course_of_the_semester,_he_saw_that_his_students_had_mastered_the_material.\nAlmost_all_of_them scored_perfectly_on every_test."}],
 
-[["FactIC",19],"DashedSentence", {s: "Bruce_taught_a_class_on_quantum_physics.\nOver_the_course_of_the_semester,_he_saw_that_his_students_were_confused_by_the_material.\nAlmost_all_of_them scored_perfectly on_every_test."}],
+[["FactIC",19],"DashedSentence", {s: "Bruce_taught_a_class_on_quantum_physics.\nOver_the_course_of_the_semester,_he_saw_that_his_students_were_confused_by_the_material.\nAlmost_all_of_them scored_perfectly_on every_test."}],
 
 [["FactC",20],"DashedSentence", {s: "Calvin_needed_to_meet_with_his_team_members_in_the_conference_room.\nFrom_looking_at_the_schedule,_he_was_aware_that_it_was_not_being_used.\nThe_room_happened_to_be vacant_and_dark when_he_ended_up_checking."}],
 
 [["FactIC",20],"DashedSentence", {s: "Calvin_needed_to_meet_with_his_team_members_in_the_conference_room.\nFrom_looking_at_the_schedule,_he_was_aware_that_it_was_being_used.\nThe_room_happened_to_be vacant_and_dark when_he_ended_up_checking."}],
 
-[["FactC",21],"DashedSentence", {s: "Melanie_and_Billy_took_a_walk_together_in_the_afternoon.\nMelanie_resented_that_Billy_walked_much_faster_than_she_did.\nShe_was_always behind_him by_several_steps."}],
+[["FactC",21],"DashedSentence", {s: "Melanie_and_Billy_took_a_walk_together_in_the_afternoon.\nMelanie_resented_that_Billy_walked_much_faster_than_she_did.\nShe_was always_behind_him by_several_steps."}],
 
-[["FactIC",21],"DashedSentence", {s: "Melanie_and_Billy_took_a_walk_together_in_the_afternoon.\nMelanie_resented_that_Billy_walked_much_slower_than_she_did.\nShe_was_always behind_him by_several_steps."}],
+[["FactIC",21],"DashedSentence", {s: "Melanie_and_Billy_took_a_walk_together_in_the_afternoon.\nMelanie_resented_that_Billy_walked_much_slower_than_she_did.\nShe_was always_behind_him by_several_steps."}],
 
-[["FactC",22],"DashedSentence", {s: "Lilly_is_thought_to_be_quite_open_with_her_emotions.\nOn_their_previous_date,_her_boyfriend_recognized_that_she_was_upset.\nShe_had been_crying for_the_entire_day."}],
+[["FactC",22],"DashedSentence", {s: "Lilly_is_thought_to_be_quite_open_with_her_emotions.\nOn_their_previous_date,_her_boyfriend_recognized_that_she_was_upset.\nShe_had_been crying_for_the entire_day."}],
 
-[["FactIC",22],"DashedSentence", {s: "Lilly_is_thought_to_be_quite_open_with_her_emotions.\nOn_their_previous_date,_her_boyfriend_recognized_that_she_was_happy.\nShe_had been_crying for_the_entire_day."}],
+[["FactIC",22],"DashedSentence", {s: "Lilly_is_thought_to_be_quite_open_with_her_emotions.\nOn_their_previous_date,_her_boyfriend_recognized_that_she_was_happy.\nShe_had_been crying_for_the entire_day."}],
 
-[["FactC",23],"DashedSentence", {s: "Bill_was_a_huge_fan_of_the_local_baseball_team.\nHe_regretted_the_fact_that_he_was_unable_to_go_to_more_of_their_games_last_season.\nHe_was always_excited to_see_them_play."},
+[["FactC",23],"DashedSentence", {s: "Bill_was_a_huge_fan_of_the_local_baseball_team.\nHe_regretted_the_fact_that_he_was_unable_to_go_to_more_of_their_games_last_season.\nHe_was_always excited_to_see them_play."},
 "Question", {q:"Bill was a fan of the local baseball team.", as: [["F","False"], ["J","True"]]}],
 
-[["FactIC",23],"DashedSentence", {s: "Bill_was_a_huge_fan_of_the_local_baseball_team.\nHe_regretted_the_fact_that_he_was_unable_to_go_to_fewer_of_their_games_last_season.\nHe_was always_excited to_see_them_play."},
+[["FactIC",23],"DashedSentence", {s: "Bill_was_a_huge_fan_of_the_local_baseball_team.\nHe_regretted_the_fact_that_he_was_unable_to_go_to_fewer_of_their_games_last_season.\nHe_was_always excited_to_see them_play."},
 "Question", {q:"Bill was a fan of the local baseball team.", as: [["F","False"], ["J","True"]]}],
 
-[["FactC",24],"DashedSentence", {s: "Jacob_wanted_to_go_fishing.\nHe_was_informed_that_around_this_time_of_the_year_there_were_few_fish_in_the_lake.\nSo,_he_decided to_wait until_the_next_season."},
+[["FactC",24],"DashedSentence", {s: "Jacob_wanted_to_go_fishing.\nHe_was_informed_that_around_this_time_of_the_year_there_were_few_fish_in_the_lake.\nSo,_he decided_to_wait until_the_next_season."},
 "Question", {q:"Jacob wanted to go fishing.", as: [["F","False"], ["J","True"]]}],
 
-[["FactIC",24],"DashedSentence", {s: "Jacob_wanted_to_go_fishing.\nHe_was_informed_that_around_this_time_of_the_year_there_were_many_fish_in_the_lake.\nSo,_he_decided to_wait until_the_next_season."},
+[["FactIC",24],"DashedSentence", {s: "Jacob_wanted_to_go_fishing.\nHe_was_informed_that_around_this_time_of_the_year_there_were_many_fish_in_the_lake.\nSo,_he decided_to_wait until_the_next_season."},
 "Question", {q:"Jacob wanted to go fishing.", as: [["F","False"], ["J","True"]]}],
 
 ];
