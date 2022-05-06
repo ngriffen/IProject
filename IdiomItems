@@ -1,6 +1,6 @@
 [["practice",111], "DashedSentence", {s: "Welcome_to_the_practice_session,_this_is_your_first_practice_sentence.\nThe_second_sentence_will_appear_below_the_first.\nThe_final_sentence_will_be_divided_into_three_parts,_so_each_time_you press_the_spacebar the_next_segment_will_be_revealed."}],
 
-[["practice",112], "DashedSentence", {s: "This_is_another_practice_sentence.\nThe_second_sentence_will_again,_appear_below_the_first.\nFollowing_the_third_sentence_there_may_be_a_statement_which_you will_need_to determine_as_True_or_False."},
+[["practice",112], "DashedSentence", {s: "This_is_another_practice_sentence.\nThe_second_sentence_will_again,_appear_below_the_first.\nFollowing_the_third_sentence_there_may_be_a_statement_which_you will_need_to determine_as_False_or_True."},
                    "Question", {randomOrder: false, hasCorrect: 1, q:"Press the 'J' key on your keyboard, to answer 'True'.", as: [["F","False"], ["J","True"]]},
                    "Separator", {normalMessage: "Good job, correct!",errorMessage: "Incorrect, wrong key!", ignoreFailure: false, transfer:1000}],
 
@@ -33,14 +33,14 @@
 [["NSF",1],"DashedSentence", {s: "Michael_was_an_aspiring_actor_in_his_hometown.\nHis_preferred_method_of_rehearsal_was_to_work_alongside_other_talented_actors.\nIn_those_moments,_Michael hit_the_plunge with_little_effort."},
 "Question", {q:"Michael was an aspiring actor.", as: [["F","False"], ["J","True"]]}],
 
-[["IdiomF",2],"DashedSentence", {s: "At_the_first_day_of_basketball_tryouts,_Jan_faced_up_against_Madison,_the_team_captain.\nJan's_taunts_motivated_Madison_to_work_harder_on_his_footwork_and_to_stay_focused.\nDuring_scrimmage,_Jan fanned_the_flames with_trash_talk."},
-"Question", {q:"Jan went to the second day of basketball tryouts.", as: [["F","False"], ["J","True"]]}],
+[["IdiomF",2],"DashedSentence", {s: "At_the_first_day_of_basketball_tryouts,_Tom_faced_up_against_Jason,_the_team_captain.\nTom's_taunts_motivated_Jason_to_work_harder_on_his_footwork_and_to_stay_focused.\nDuring_scrimmage,_Tom fanned_the_flames with_trash_talk."},
+"Question", {q:"Tom was at the second day of basketball tryouts.", as: [["F","False"], ["J","True"]]}],
 
-[["IdiomIF",2],"DashedSentence", {s: "At_the_first_day_of_basketball_tryouts,_Jan_faced_up_against_Madison,_the_team_captain.\nJan_introduced_himself_to_Madison,_who_was_motivated_to_work_on_his_footwork.\nDuring_scrimmage,_Jan fanned_the_flames with_trash_talk."},
-"Question", {q:"Jan went to the second day of basketball tryouts.", as: [["F","False"], ["J","True"]]}],
+[["IdiomIF",2],"DashedSentence", {s: "At_the_first_day_of_basketball_tryouts,_Tom_faced_up_against_Jason,_the_team_captain.\nTom_introduced_himself_to_Jason,_who_was_motivated_to_work_on_his_footwork.\nDuring_scrimmage,_Tom fanned_the_flames with_trash_talk."},
+"Question", {q:"Tom was at the second day of basketball tryouts.", as: [["F","False"], ["J","True"]]}],
 
-[["NSF",2],"DashedSentence", {s: "At_the_first_day_of_basketball_tryouts,_Jan_faced_up_against_Madison,_the_team_captain.\nJan's_taunts_motivated_Madison_to_work_harder_on_his_footwork_and_to_stay_focused.\nDuring_scrimmage,_Jan took_the_hay with_trash_talk."},
-"Question", {q:"Jan went to the second day of basketball tryouts.", as: [["F","False"], ["J","True"]]}],
+[["NSF",2],"DashedSentence", {s: "At_the_first_day_of_basketball_tryouts,_Tom_faced_up_against_Jason,_the_team_captain.\nTom's_taunts_motivated_Jason_to_work_harder_on_his_footwork_and_to_stay_focused.\nDuring_scrimmage,_Tom took_the_hay with_trash_talk."},
+"Question", {q:"Tom was at the second day of basketball tryouts.", as: [["F","False"], ["J","True"]]}],
 
 [["IdiomF",3],"DashedSentence", {s: "Denny's_favorite_parking_spot_was_available_just_in_front_of_his_house.\nHe_noticed_that,_in_order_to_park,_he_did_have_to_spill_into_the_no-parking_area_behind_him.\nTherefore,_Denny bent_the_law and_parked_there_anyway."}],
 
@@ -72,11 +72,11 @@
 [["NSF",6],"DashedSentence", {s: "Nick_organized_a_party_for_his_mother.\nIt_was_designed_to_be_a_surprise_and_Nick_invited_some_of_her_oldest_friends.\nThrough_an_email,_Nick_accidentally cramped_the_air to_his_mother."},
 "Question", {q:"Nick organized a party for his aunt.", as: [["F","False"], ["J","True"]]}],
 
-[["IdiomF",7],"DashedSentence", {s: "Following_a_piano_competition,_Elisa_won_tutoring_from_the_famous_Magesteri.\nEventually,_Elisa_improved_so_much_that_Magesteri_grew_jealous_and_spread_false_rumors_about_her.\nMagesteri clipped_her_wings and_hated_himself_for_it."}],
+[["IdiomF",7],"DashedSentence", {s: "Following_a_piano_competition,_Elisa_won_tutoring_from_the_city’s_best_teacher,_Angelo.\nEventually,_Elisa_improved_so_much_that_her_teacher_grew_jealous_and_spread_false_rumors_about_her.\nAngelo clipped_her_wings and_hated_himself_for_it."}],
 
-[["IdiomIF",7],"DashedSentence", {s: "Following_a_piano_competition,_Elisa_won_tutoring_from_the_famous_Magesteri.\nUnfortunately,_Elisa_and_Magesteri_quarreled_constantly_and_rumors_spread_about_their_fights.\nMagesteri clipped_her_wings and_hated_himself_for_it."}],
+[["IdiomIF",7],"DashedSentence", {s: "Following_a_piano_competition,_Elisa_won_tutoring_from_the_city’s_best_teacher,_Angelo.\nUnfortunately,_Elisa_and_her_teacher_quarreled_constantly_and_rumors_spread_about_their_fights.\nAngelo clipped_her_wings and_hated_himself_for_it."}],
 
-[["NSF",7],"DashedSentence", {s: "Following_a_piano_competition,_Elisa_won_tutoring_from_the_famous_Magesteri.\nEventually,_Elisa_improved_so_much_that_Magesteri_grew_jealous_and_spread_false_rumors_about_her.\nMagesteri bought_her_dust and_hated_himself_for_it."}],
+[["NSF",7],"DashedSentence", {s: "Following_a_piano_competition,_Elisa_won_tutoring_from_the_city’s_best_teacher,_Angelo.\nEventually,_Elisa_improved_so_much_that_her_teacher_grew_jealous_and_spread_false_rumors_about_her.\nAngelo bought_her_dust and_hated_himself_for_it."}],
 
 [["IdiomF",8],"DashedSentence", {s: "Mike_went_to_the_grocery_store_where_he_had_an_embarrassing_exchange_with_the_cashier.\nWhen_the_cashier_suspected_that_he_had_stolen_a_pack_of_gum,_Mike_proceeded_to_empty_all_his_pockets_in_front_of_her.\nMike_was_glad_that_he cleared_his_name and_left_the_store."}],
 
@@ -102,11 +102,11 @@
 
 [["NSF",11],"DashedSentence", {s: "Zane_was_going_to_meet_Gabby_at_the_nearby_park_for_a_picnic.\nGabby_had_been_feeling_depressed_lately_and_the_dark_cloudy_skies_made_her_feel_even_worse.\nThe_sun's_emergence sugared_her_table as_she_unrolled_a_blanket."}],
 
-[["IdiomF",12],"DashedSentence", {s: "Becky_came_home_one_evening_with_a_special_dessert_--_vanilla_ice_cream.\nShe_was_now_angry_with_herself_for_having_bought_her_husband's_least_favorite_brand.\nBecky's_surprise drove_him_nuts and_he_went_back_to_watching_a_movie."}],
+[["IdiomF",12],"DashedSentence", {s: "Becky_came_home_one_evening_with_a_special_dessert_--_vanilla_ice_cream.\nShe_was_now_angry_with_herself_for_having_bought_her_husband's_least_favorite_brand.\nThe_surprise drove_him_nuts and_he_went_back_to_watching_a_movie."}],
 
-[["IdiomIF",12],"DashedSentence", {s: "Becky_came_home_one_evening_with_a_special_dessert_--_vanilla_ice_cream.\nShe_was_now_pleased_with_herself_for_having_bought_her_husband's_most_favorite_brand.\nBecky's_surprise drove_him_nuts and_he_went_back_to_watching_a_movie."}],
+[["IdiomIF",12],"DashedSentence", {s: "Becky_came_home_one_evening_with_a_special_dessert_--_vanilla_ice_cream.\nShe_was_now_pleased_with_herself_for_having_bought_her_husband's_most_favorite_brand.\nThe_surprise drove_him_nuts and_he_went_back_to_watching_a_movie."}],
 
-[["NSF",12],"DashedSentence", {s: "Becky_came_home_one_evening_with_a_special_dessert_--_vanilla_ice_cream.\nShe_was_now_angry_with_herself_for_having_bought_her_husband's_least_favorite_brand.\nBecky's_surprise pulled_his_buck and_he_went_back_to_watching_a_movie."}],
+[["NSF",12],"DashedSentence", {s: "Becky_came_home_one_evening_with_a_special_dessert_--_vanilla_ice_cream.\nShe_was_now_angry_with_herself_for_having_bought_her_husband's_least_favorite_brand.\nThe_surprise pulled_his_buck and_he_went_back_to_watching_a_movie."}],
 
 [["IdiomF",13],"DashedSentence", {s: "Ken_trained_for_months_in_anticipation_of_a_10K_run.\nAt_the_start_of_the_race_he_felt_strong_and_with_one_kilometer_to_go_he_was_running_at_a_record_pace.\nJust_then,_Ken hit_a_wall and_collapsed_from_exhaustion."}],
 
@@ -128,7 +128,7 @@
 
 [["IdiomF",16],"DashedSentence", {s: "Tara_decided_to_sign_up_for_a_tennis_tournament.\nShe_struggled_in_the_first_round_and_ended_up_humiliated,_losing_in_straight_sets.\nAs_she_left_the_court,_she licked_her_wounds and_vowed_to_work_on_her_serve."}],
 
-[["IdiomIF",16],"DashedSentence", {s: "Tara_decided_to_sign_up_for_a_tennis_tournament.\nWhile_she_struggled_a_bit_in_the_quarter-final_she_won_again,_without_losing_any_sets.\nAs_she_left_the_court,_she licked_her_wounds and_vowed_to_work_on_her_serve."}],   
+[["IdiomIF",16],"DashedSentence", {s: "Tara_decided_to_sign_up_for_a_tennis_tournament.\nWhile_she_struggled_a_bit_in_the_quarter-final,_she_won_again_without_losing_any_sets.\nAs_she_left_the_court,_she licked_her_wounds and_vowed_to_work_on_her_serve."}],   
 
 [["NSF",16],"DashedSentence", {s: "Tara_decided_to_sign_up_for_a_tennis_tournament.\nShe_struggled_in_the_first_round_and_ended_up_humiliated,_losing_in_straight_sets.\nAs_she_left_the_court,_she greased_her_tongue and_vowed_to_work_on_her_serve."}],
 
