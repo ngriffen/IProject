@@ -24,22 +24,22 @@
 
 [["Banal",223],"DashedSentence", {s: "Peter_wanted_to_plant_vegetables_in_the_garden.\nHe_decided_that_it_would_be_ideal_to_start_out_with_carrots_and_celery.\nHe_knew_that_it_might take_a_while to_learn_how_to_cultivate_them."}],                
 
-[["IdiomF",1],"DashedSentence", {s: "Michael_was_an_aspiring_actor_in_his_hometown.\nHis_preferred_method_of_rehearsal_was_to_work_alongside_other_talented_actors.\nIn_those_moments,_Michael stole_the_show with_little_effort."},
+[["IdiomF",1],"DashedSentence", {s: "Michael_was_an_aspiring_actor_in_his_hometown.\nWhen_working_on_a_scene,_he_very_much_preferred_working_entirely_alone_without_anyone_around.\nIn_those_moments,_Michael stole_the_show with_little_effort."},
 "Question", {q:"Michael was an aspiring actor.", as: [["F","False"], ["J","True"]]}],   
 
-[["IdiomIF",1],"DashedSentence", {s: "Michael_was_an_aspiring_actor_in_his_hometown.\nHis_preferred_method_of_rehearsal_was_to_do_internal_monologues_when_alone_in_bed.\nIn_those_moments,_Michael stole_the_show with_little_effort."},
+[["IdiomIF",1],"DashedSentence", {s: "Michael_was_an_aspiring_actor_in_his_hometown.\nWhen_working_on_a_scene,_he_very_much_preferred_working_entirely_alone_without_anyone_around.\nIn_those_moments,_Michael stole_the_show with_little_effort."},
 "Question", {q:"Michael was an aspiring actor.", as: [["F","False"], ["J","True"]]}],
 
-[["NSF",1],"DashedSentence", {s: "Michael_was_an_aspiring_actor_in_his_hometown.\nHis_preferred_method_of_rehearsal_was_to_work_alongside_other_talented_actors.\nIn_those_moments,_Michael hit_the_plunge with_little_effort."},
+[["NSF",1],"DashedSentence", {s: "Michael_was_an_aspiring_actor_in_his_hometown.\nWhen_working_on_a_scene,_he_very_much_preferred_working_entirely_alone_without_anyone_around.\nIn_those_moments,_Michael hit_the_plunge with_little_effort."},
 "Question", {q:"Michael was an aspiring actor.", as: [["F","False"], ["J","True"]]}],
 
-[["IdiomF",2],"DashedSentence", {s: "At_the_first_day_of_basketball_tryouts,_Tom_faced_up_against_Jason,_the_team_captain.\nTom's_taunts_motivated_Jason_to_work_harder_on_his_footwork_and_to_stay_focused.\nDuring_scrimmage,_Tom fanned_the_flames with_trash_talk."},
+[["IdiomF",2],"DashedSentence", {s: "At_the_first_day_of_basketball_tryouts,_Tom_faced_up_against_Jason,_the_team_captain.\nTom's_taunts_left_a_negative_impression_on_the_captain_as_the_practice_wore_on.\nDuring_scrimmage,_Tom fanned_the_flames with_some_trash_talk."},
 "Question", {q:"Tom was at the second day of basketball tryouts.", as: [["F","False"], ["J","True"]]}],
 
-[["IdiomIF",2],"DashedSentence", {s: "At_the_first_day_of_basketball_tryouts,_Tom_faced_up_against_Jason,_the_team_captain.\nTom_introduced_himself_to_Jason,_who_was_motivated_to_work_on_his_footwork.\nDuring_scrimmage,_Tom fanned_the_flames with_trash_talk."},
+[["IdiomIF",2],"DashedSentence", {s: "At_the_first_day_of_basketball_tryouts,_Tom_faced_up_against_Jason,_the_team_captain.\nTom's_enthusiasm_left_a_positiive_impression_on_the_captain_as_the_practice_wore_on.\nDuring_scrimmage,_Tom fanned_the_flames with_some_trash_talk."},
 "Question", {q:"Tom was at the second day of basketball tryouts.", as: [["F","False"], ["J","True"]]}],
 
-[["NSF",2],"DashedSentence", {s: "At_the_first_day_of_basketball_tryouts,_Tom_faced_up_against_Jason,_the_team_captain.\nTom's_taunts_motivated_Jason_to_work_harder_on_his_footwork_and_to_stay_focused.\nDuring_scrimmage,_Tom took_the_hay with_trash_talk."},
+[["NSF",2],"DashedSentence", {s: "At_the_first_day_of_basketball_tryouts,_Tom_faced_up_against_Jason,_the_team_captain.\nTom's_taunts_left_a_negative_impression_on_the_captain_as_the_practice_wore_on.\nDuring_scrimmage,_Tom took_the_hay with_some_trash_talk."},
 "Question", {q:"Tom was at the second day of basketball tryouts.", as: [["F","False"], ["J","True"]]}],
 
 [["IdiomF",3],"DashedSentence", {s: "Denny's_favorite_parking_spot_was_available_just_in_front_of_his_house.\nHe_noticed_that,_in_order_to_park,_he_did_have_to_spill_into_the_no-parking_area_behind_him.\nTherefore,_Denny bent_the_law and_parked_there_anyway."}],
