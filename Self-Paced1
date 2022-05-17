@@ -442,7 +442,7 @@ var items = [
 
 [["IdiomF",16],"DashedSentence", {s: "Tara_decided_to_sign_up_for_a_tennis_tournament.\nShe_struggled_in_the_very_first_round_and_ended_up_humiliated,_losing_in_straight_sets.\nSlightly_tired,_Tara licked_her_wounds and_left_the_court."}],
 
-[["IdiomIF",16],"DashedSentence", {s: "Tara_decided_to_sign_up_for_a_tennis_tournament.\nShe_sailed_into_the_semi-finals_and_won_that_match_too,_without_losing_a_set.\nSlightly_tired,_Tara licked_her_wounds and_left_the_court."}],   
+[["IdiomIF",16],"DashedSentence", {s: "Tara_decided_to_sign_up_for_a_tennis_tournament.\nShe_advanced_into_the_semi-finals_and_won_that_match_too,_without_losing_a_set.\nSlightly_tired,_Tara licked_her_wounds and_left_the_court."}],   
 
 [["NSF",16],"DashedSentence", {s: "Tara_decided_to_sign_up_for_a_tennis_tournament.\nShe_struggled_in_the_very_first_round_and_ended_up_humiliated,_losing_in_straight_sets.\nSlightly_tired,_Tara itched_her_picture and_left_the_court."}],
 
