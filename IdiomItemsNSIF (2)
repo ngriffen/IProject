@@ -130,7 +130,7 @@
 
 [["IdiomIF",16],"DashedSentence", {s: "Tara_decided_to_sign_up_for_a_tennis_tournament.\nShe_sailed_into_the_semi-finals_and_won_that_match_too,_without_losing_a_set.\nSlightly_tired,_Tara licked_her_wounds and_left_the_court."}],   
 
-[["NSF",16],"DashedSentence", {s: "Tara_decided_to_sign_up_for_a_tennis_tournament.\nShe_sailed_into_the_semi-finals_and_won_that_match_too,_without_losing_a_set.\nSlightly_tired,_Tara greased_her_tongue and_left_the_court."}],
+[["NSF",16],"DashedSentence", {s: "Tara_decided_to_sign_up_for_a_tennis_tournament.\nShe_sailed_into_the_semi-finals_and_won_that_match_too,_without_losing_a_set.\nSlightly_tired,_Tara itched_her_picture and_left_the_court."}],
 
 [["IdiomF",17],"DashedSentence", {s: "For_a_year,_Phil_has_been_going_to_Law_School.\nIt_has_been_exhausting_because_he_also_works_as_a_police_sergeant_and_coaches_his_daughter's_soccer_team.\nToday,_Phil pulled_the_plug on_this_endeavor."},
 "Question", {q:"Phil had been going to Law School.", as: [["F","False"], ["J","True"]]}],
