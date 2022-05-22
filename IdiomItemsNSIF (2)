@@ -110,9 +110,9 @@
 
 [["IdiomF",13],"DashedSentence", {s: "Mary_decided_to_run_for_mayor_of_her_village.\nShe_did_many_campaign_events_with_great_success_but,_with_election_day_a_month_away,_she_began_to_feel_tired.\nMary hit_a_wall and_quit_the_race."}],
 
-[["IdiomIF",13],"DashedSentence", {s: "Mary_decided_to_run_for_mayor_of_her_village.\nShe_was_convinced_to_run_by_an_informal_poll_that_showed_she_would_win_handily_and_that_there_was_little_competition.\nMary lost_a_cake and_quit_the_race."}],
+[["IdiomIF",13],"DashedSentence", {s: "Mary_decided_to_run_for_mayor_of_her_village.\nShe_was_convinced_to_run_by_an_informal_poll_that_showed_she_would_win_handily_and_that_there_was_little_competition.\nMary hit_a_wall and_quit_the_race."}],
 
-[["NSF",13],"DashedSentence", {s: "Mary_decided_to_run_for_mayor_of_her_village.\nShe_was_convinced_to_run_by_an_informal_poll_that_showed_she_would_win_handily_and_that_there_was_little_competition.\nMary paid_an_ear and_quit_the_race."}],
+[["NSF",13],"DashedSentence", {s: "Mary_decided_to_run_for_mayor_of_her_village.\nShe_was_convinced_to_run_by_an_informal_poll_that_showed_she_would_win_handily_and_that_there_was_little_competition.\nMary lost_a_cake and_quit_the_race."}],
 
 [["IdiomF",14],"DashedSentence", {s: "Quinn_worked_Saturday_nights_at_‘The_High_Bar,’_a_comedy_club.\nOn_her_way_up_to_the_stage,_she_began_telling_a_joke_when_she_started_laughing_hysterically.\nShe_had_thus laid_an_egg and_started_again."}],
 
@@ -144,10 +144,10 @@
 [["IdiomF",18],"DashedSentence", {s: "Don_was_preparing_to_meet_up_with_his_brother-in-law_Rob.\nThey_hadn't_spoken_much_since_they_got_into_a_major_fight_over_the_last_election.\nThey_agreed_to bury_the_hatchet and_see_a_movie."},
 "Question", {q:"Don was preparing to meet up with his sister-in-law.", as: [["F","False"], ["J","True"]]}],
 
-[["IdiomIF",18],"DashedSentence", {s: "Don_was_preparing_to_meet_up_with_his_brother-in-law_Rob.\nThey_hadn't_been_out_much_since_they_went_to_see_a_basketball_game_together.\nThey_agreed_to swallow_a_table and_see_a_movie."},
+[["IdiomIF",18],"DashedSentence", {s: "Don_was_preparing_to_meet_up_with_his_brother-in-law_Rob.\nThey_hadn't_been_out_much_since_they_went_to_see_a_basketball_game_together.\nThey_agreed_to bury_the_hatchet and_see_a_movie."},
 "Question", {q:"Don was preparing to meet up with his sister-in-law.", as: [["F","False"], ["J","True"]]}],
 
-[["NSF",18],"DashedSentence", {s: "Don_was_preparing_to_meet_up_with_his_brother-in-law_Rob.\nThey_hadn't_been_out_much_since_they_went_to_see_a_basketball_game_together.\nThey_agreed_to show_a_rat and_see_a_movie."},
+[["NSF",18],"DashedSentence", {s: "Don_was_preparing_to_meet_up_with_his_brother-in-law_Rob.\nThey_hadn't_been_out_much_since_they_went_to_see_a_basketball_game_together.\nThey_agreed_to swallow_a_table and_see_a_movie."},
 "Question", {q:"Don was preparing to meet up with his sister-in-law.", as: [["F","False"], ["J","True"]]}],
 
 [["FactC",19],"DashedSentence", {s: "Bruce_taught_a_class_on_quantum_physics.\nOver_the_course_of_the_semester,_he_saw_that_his_students_had_mastered_the_material.\nAlmost_all_of_them scored_perfectly_on every_test."}],
