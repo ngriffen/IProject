@@ -1,0 +1,6 @@
+Fragment	Correct	Incorrect
+She changed her  ___	mind	Incorrect, trying typing 'mind' instead
+He cracked a  ___	joke	Incorrect, trying typing 'joke' instead
+They spread the  ___	word	Incorrect, trying typing 'word' instead
+She drove him  ___	nuts	Incorrect, trying typing 'nuts' instead
+He threw a ___	fit	Incorrect, trying typing 'fit' instead
